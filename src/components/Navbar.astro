@@ -1,0 +1,192 @@
+---
+/* Navegación principal - Comisión de Judiciales */
+
+interface NavLink {
+  label: string;
+  href: string;
+}
+
+const mainLinks: NavLink[] = [
+  { label: 'Inicio', href: '/' },
+  { label: 'Quiénes somos', href: '/quienes-somos' },
+  { label: 'Necesito ayuda ahora', href: '/necesito-ayuda' },
+  { label: 'Contacto', href: '/contacto' },
+];
+
+const secondaryLinks: NavLink[] = [
+  { label: 'Información útil y herramientas', href: '/informacion-util' },
+  { label: 'Legislación y jurisprudencia', href: '/legislacion' },
+  { label: 'Testimonios', href: '/testimonios' },
+  { label: 'Proyecto de Ley', href: '/proyecto-de-ley' },
+  { label: 'Blog', href: '/blog' },
+  { label: 'Preguntas Frecuentes', href: '/preguntas-frecuentes' },
+];
+
+const currentPath = Astro.url.pathname;
+---
+
+<nav class="w-full sticky top-0 z-50" aria-label="Navegación principal">
+  <!-- ═══ Fila superior: Azul marino ═══ -->
+  <div class="bg-azul-marino">
+    <div class="px-6 lg:px-10 py-4">
+
+      <!-- Contenido centrado: logo + título + links (Desktop) -->
+      <div class="hidden md:flex items-center justify-center gap-6">
+        <!-- Logo -->
+        <a href="/" class="shrink-0" aria-label="Inicio">
+          <img
+            src="/LOGO.jpeg"
+            alt="Logo Comisión de Judiciales"
+            class="w-16 h-16 md:w-20 md:h-20 rounded-full object-cover"
+          />
+        </a>
+
+        <!-- Título + línea + links -->
+        <div class="flex flex-col">
+          <!-- Título -->
+          <h1 class="text-white font-semibold text-xl lg:text-2xl whitespace-nowrap">
+            Comisión de Judiciales por un trabajo libre de violencia y acoso
+          </h1>
+
+          <!-- Línea divisoria -->
+          <div class="w-full h-px bg-dorado/40 my-3"></div>
+
+          <!-- Links principales centrados -->
+          <div class="flex items-center justify-center gap-8 lg:gap-10">
+            {mainLinks.filter(link => link.href !== '/necesito-ayuda').map((link) => (
+              <a
+                href={link.href}
+                class:list={[
+                  'text-base lg:text-lg font-medium transition-colors duration-200',
+                  currentPath === link.href
+                    ? 'text-dorado'
+                    : 'text-white/90 hover:text-dorado',
+                ]}
+              >
+                {link.label}
+              </a>
+            ))}
+
+            <!-- Botón CTA: Necesito ayuda ahora -->
+            <a
+              href="/necesito-ayuda"
+              class="px-5 py-2 bg-dorado text-azul-marino font-semibold text-base lg:text-lg rounded-md hover:bg-dorado-light transition-all duration-200 hover:shadow-lg hover:shadow-dorado/20"
+            >
+              Necesito ayuda ahora
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile: logo + título + hamburguesa -->
+      <div class="md:hidden flex items-center gap-3">
+        <a href="/" class="shrink-0" aria-label="Inicio">
+          <img
+            src="/LOGO.jpeg"
+            alt="Logo Comisión de Judiciales"
+            class="w-12 h-12 rounded-full object-cover"
+          />
+        </a>
+        <p class="text-white font-semibold text-xs sm:text-sm leading-tight flex-1">
+          Comisión de Judiciales por un trabajo libre de violencia y acoso
+        </p>
+        <button
+          id="mobile-menu-toggle"
+          class="p-2 text-white/80 hover:text-white rounded-md hover:bg-white/5 transition-colors shrink-0"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+        >
+          <svg id="menu-icon-open" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+          <svg id="menu-icon-close" class="w-6 h-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Línea dorada separadora -->
+  <div class="h-[3px] bg-dorado"></div>
+
+  <!-- ═══ Fila inferior: Bordó ═══ -->
+  <div class="bg-bordo hidden md:block">
+    <div class="px-6 lg:px-10">
+      <div class="flex items-center justify-center gap-2 lg:gap-4 h-11">
+        {secondaryLinks.map((link) => (
+          <a
+            href={link.href}
+            class:list={[
+              'px-3 py-1.5 text-sm lg:text-base font-medium rounded transition-colors duration-200',
+              currentPath === link.href
+                ? 'text-dorado bg-white/10'
+                : 'text-white/90 hover:text-white hover:bg-white/5',
+            ]}
+          >
+            {link.label}
+          </a>
+        ))}
+      </div>
+    </div>
+  </div>
+
+  <!-- Línea dorada inferior -->
+  <div class="h-[3px] bg-dorado hidden md:block"></div>
+
+  <!-- ═══ Menú móvil ═══ -->
+  <div id="mobile-menu" class="md:hidden hidden bg-azul-marino-dark border-t border-white/10">
+    <div class="px-4 py-4 space-y-1">
+      {mainLinks.map((link) => (
+        <a
+          href={link.href}
+          class:list={[
+            'block px-4 py-3 text-sm font-medium rounded-md transition-colors duration-200',
+            currentPath === link.href
+              ? 'text-dorado bg-white/5'
+              : 'text-white/80 hover:text-white hover:bg-white/5',
+          ]}
+        >
+          {link.label}
+        </a>
+      ))}
+
+      <!-- Links secundarios en mobile -->
+      <div class="border-t border-white/10 pt-3 mt-3">
+        <p class="px-4 text-xs text-dorado/60 font-semibold uppercase tracking-wider mb-2">Recursos</p>
+        {secondaryLinks.map((link) => (
+          <a
+            href={link.href}
+            class:list={[
+              'block px-4 py-2.5 text-sm font-medium rounded-md transition-colors duration-200',
+              currentPath === link.href
+                ? 'text-dorado bg-white/5'
+                : 'text-white/80 hover:text-white hover:bg-white/5',
+            ]}
+          >
+            {link.label}
+          </a>
+        ))}
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Script para toggle del menú mobile -->
+<script>
+  const toggle = document.getElementById('mobile-menu-toggle');
+  const menu = document.getElementById('mobile-menu');
+  const iconOpen = document.getElementById('menu-icon-open');
+  const iconClose = document.getElementById('menu-icon-close');
+
+  toggle?.addEventListener('click', () => {
+    const isOpen = !menu?.classList.contains('hidden');
+
+    menu?.classList.toggle('hidden');
+    iconOpen?.classList.toggle('hidden');
+    iconClose?.classList.toggle('hidden');
+
+    toggle.setAttribute('aria-expanded', String(!isOpen));
+    toggle.setAttribute('aria-label', isOpen ? 'Abrir menú' : 'Cerrar menú');
+  });
+</script>
