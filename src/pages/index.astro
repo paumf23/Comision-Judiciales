@@ -1,54 +1,83 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-  <main class="relative min-h-fit py-10 lg:py-0 lg:aspect-[1280/486]">
+  <main class="relative min-h-fit py-4 xl:py-0 xl:aspect-[1280/486]">
     <!-- Imagen de fondo -->
     <img
       src="/fondo.jpeg"
       alt=""
       class="absolute inset-0 w-full h-full object-cover"
     />
-    <!-- Overlay claro equilibrado para óptimo contraste de texto y visibilidad de imagen -->
-    <div class="absolute inset-0 bg-white/55"></div>
+    <!-- Overlay radial: 70% blanco en el centro  para el texto legible, desvaneciendo al 5% en bordes -->
+    <div
+      class="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(255,255,255,0.70)_0%,_rgba(255,255,255,0.55)_35%,_rgba(255,255,255,0.15)_75%,_rgba(255,255,255,0.05)_100%)]"
+    >
+    </div>
 
-    <!-- Contenido del hero -->
-    <div class="relative z-10 flex flex-col items-center justify-center h-full px-4 lg:px-8 py-6 lg:py-8">
-
+    <!-- Contenido del hero (alineado desde arriba para reducir espacio con el nav) -->
+    <div
+      class="relative z-10 flex flex-col items-center justify-start h-full px-4 xl:px-8 pt-3 xl:pt-4 pb-6 xl:pb-8"
+    >
       <!-- Mensaje de bienvenida -->
       <div class="text-center mb-8 max-w-7xl w-full">
-        <h2 class="text-2xl md:text-3xl lg:text-4xl font-extrabold uppercase leading-tight mb-3 [text-wrap:balance]">
+        <h2
+          class="text-2xl md:text-3xl lg:text-4xl font-extrabold uppercase leading-tight mb-3 [text-wrap:balance]"
+        >
           <span class="text-azul-marino">Por un entorno laboral libre de </span>
           <br />
           <span class="text-bordo">violencia: dignidad y justicia</span>
         </h2>
-        <p class="text-lg md:text-xl lg:text-2xl text-azul-marino font-extrabold leading-snug mb-3 max-w-6xl mx-auto [text-wrap:balance]">
-          Canal oficial de la Comisión para la prevención, protección y justicia ante el acoso y maltrato laboral.
+        <p
+          class="text-lg md:text-xl lg:text-2xl text-azul-marino font-extrabold leading-snug mb-3 max-w-6xl mx-auto [text-wrap:balance]"
+        >
+          Somos una agrupación independiente, autoconvocada y federal integrada
+          por trabajadores de los Poderes Judiciales y Ministerios Públicos
+          comprometidxs con la defensa de los Derechos Humanos, la prevención y
+          erradicacion de la violencia en el ámbito laboral.
         </p>
-        <p class="text-sm md:text-base lg:text-lg text-azul-marino font-semibold leading-relaxed max-w-6xl mx-auto [text-wrap:balance]">
-          Sabemos que dar este paso no es fácil, pero queremos que sepas que no estás solo/a. Te ofrecemos un espacio de escucha activa, libre de juicios, con todo el respaldo humano e institucional necesario para acompañarte en cada etapa. Aquí tu voz importa y tus derechos son nuestra prioridad. Tu bienestar y dignidad son nuestro mayor compromiso.
+        <p
+          class="text-sm md:text-base lg:text-lg text-azul-marino font-semibold leading-relaxed max-w-6xl mx-auto [text-wrap:balance]"
+        >
+          Como espacio de lucha te ofrecemos escucha activa, libre de juicios,
+          con todo el respaldo humano necesario para acompañarte en tu
+          situación. Aquí tu voz importa y tus derechos son nuestra prioridad.
         </p>
       </div>
 
       <!-- Cards -->
-      <div class="flex flex-col md:flex-row items-stretch justify-center gap-6 lg:gap-8 w-full max-w-7xl">
-
+      <div
+        class="flex flex-col md:flex-row items-stretch justify-center gap-6 lg:gap-8 w-full max-w-7xl"
+      >
         <!-- Card: Nuestra Misión -->
         <div class="flex-1 relative pt-10">
           <!-- Icono sobresaliente -->
           <div class="absolute top-0 left-1/2 -translate-x-1/2 z-10">
-            <div class="w-20 h-20 rounded-full bg-white border-[6px] border-bordo flex items-center justify-center shadow-lg">
+            <div
+              class="w-20 h-20 rounded-full bg-white border-[6px] border-bordo flex items-center justify-center shadow-lg"
+            >
               <div
                 class="w-10 h-10 bg-bordo"
                 style="-webkit-mask: url('/balanza.png') no-repeat center / contain; mask: url('/balanza.png') no-repeat center / contain;"
-              ></div>
+              >
+              </div>
             </div>
           </div>
           <!-- Card body -->
-          <div class="bg-white/65 backdrop-blur-md rounded-lg border-[8px] border-bordo pt-12 pb-6 px-5 text-center h-full shadow-md">
-            <h3 class="text-azul-marino font-extrabold text-base lg:text-lg uppercase tracking-wide mb-2">Nuestra Misión:</h3>
-            <p class="text-bordo font-bold text-sm lg:text-base leading-relaxed">Garantizar el respeto y la dignidad</p>
+          <div
+            class="bg-white/65 backdrop-blur-md rounded-lg border-[8px] border-bordo pt-12 pb-6 px-5 text-center h-full shadow-md"
+          >
+            <h3
+              class="text-azul-marino font-extrabold text-base lg:text-lg uppercase tracking-wide mb-2"
+            >
+              Nuestra Misión:
+            </h3>
+            <p
+              class="text-bordo font-bold text-sm lg:text-base leading-relaxed"
+            >
+              Garantizar el respeto y la dignidad
+            </p>
           </div>
         </div>
 
@@ -56,17 +85,30 @@ import Layout from '../layouts/Layout.astro';
         <div class="flex-1 relative pt-10">
           <!-- Icono sobresaliente -->
           <div class="absolute top-0 left-1/2 -translate-x-1/2 z-10">
-            <div class="w-20 h-20 rounded-full bg-white border-[6px] border-bordo flex items-center justify-center shadow-lg">
+            <div
+              class="w-20 h-20 rounded-full bg-white border-[6px] border-bordo flex items-center justify-center shadow-lg"
+            >
               <div
                 class="w-10 h-10 bg-bordo"
                 style="-webkit-mask: url('/marco_legal.png') no-repeat center / contain; mask: url('/marco_legal.png') no-repeat center / contain;"
-              ></div>
+              >
+              </div>
             </div>
           </div>
           <!-- Card body -->
-          <div class="bg-white/65 backdrop-blur-md rounded-lg border-[8px] border-bordo pt-12 pb-6 px-5 text-center h-full shadow-md">
-            <h3 class="text-azul-marino font-extrabold text-base lg:text-lg uppercase tracking-wide mb-2">Marco Legal:</h3>
-            <p class="text-bordo font-bold text-sm lg:text-base leading-relaxed">Acceda a protocolos y leyes vigentes</p>
+          <div
+            class="bg-white/65 backdrop-blur-md rounded-lg border-[8px] border-bordo pt-12 pb-6 px-5 text-center h-full shadow-md"
+          >
+            <h3
+              class="text-azul-marino font-extrabold text-base lg:text-lg uppercase tracking-wide mb-2"
+            >
+              Marco Legal:
+            </h3>
+            <p
+              class="text-bordo font-bold text-sm lg:text-base leading-relaxed"
+            >
+              Acceda a protocolos y leyes vigentes
+            </p>
           </div>
         </div>
 
@@ -74,21 +116,364 @@ import Layout from '../layouts/Layout.astro';
         <div class="flex-1 relative pt-10">
           <!-- Icono sobresaliente -->
           <div class="absolute top-0 left-1/2 -translate-x-1/2 z-10">
-            <div class="w-20 h-20 rounded-full bg-white border-[6px] border-bordo flex items-center justify-center shadow-lg">
+            <div
+              class="w-20 h-20 rounded-full bg-white border-[6px] border-bordo flex items-center justify-center shadow-lg"
+            >
               <div
                 class="w-10 h-10 bg-bordo"
                 style="-webkit-mask: url('/personas.png') no-repeat center / contain; mask: url('/personas.png') no-repeat center / contain;"
-              ></div>
+              >
+              </div>
             </div>
           </div>
           <!-- Card body -->
-          <div class="bg-white/65 backdrop-blur-md rounded-lg border-[8px] border-bordo pt-12 pb-6 px-5 text-center h-full shadow-md">
-            <h3 class="text-azul-marino font-extrabold text-base lg:text-lg uppercase tracking-wide mb-2">Apoyo & Mediación:</h3>
-            <p class="text-bordo font-bold text-sm lg:text-base leading-relaxed">Canales de ayuda y seguimiento</p>
+          <div
+            class="bg-white/65 backdrop-blur-md rounded-lg border-[8px] border-bordo pt-12 pb-6 px-5 text-center h-full shadow-md"
+          >
+            <h3
+              class="text-azul-marino font-extrabold text-base lg:text-lg uppercase tracking-wide mb-2"
+            >
+              Apoyo & Mediación:
+            </h3>
+            <p
+              class="text-bordo font-bold text-sm lg:text-base leading-relaxed"
+            >
+              Canales de ayuda y seguimiento
+            </p>
           </div>
         </div>
-
       </div>
     </div>
   </main>
+
+  <!-- ═══ Sección: Ruta de Asistencia ═══ -->
+  <section
+    class="bg-azul-marino text-white py-16 px-6 md:px-12 lg:px-20 relative overflow-hidden"
+  >
+    <!-- Decoración sutil de fondo -->
+    <div
+      class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_rgba(166,137,92,0.1)_0%,_transparent_60%)]"
+    >
+    </div>
+
+    <div class="relative z-10 max-w-7xl mx-auto text-center">
+      <!-- Subtítulo decorativo -->
+      <span
+        class="inline-block text-dorado font-bold text-sm md:text-base uppercase tracking-widest mb-3 px-4 py-1.5 rounded-full bg-white/5 border border-dorado/30"
+      >
+        Proceso Guiado
+      </span>
+
+      <!-- Título principal -->
+      <h2
+        class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white uppercase tracking-tight mb-4"
+      >
+        No estás solx: Nuestra ruta de <span class="text-dorado"
+          >Asistencia</span
+        >
+      </h2>
+
+      <!-- Separador elegante -->
+      <div class="w-24 h-1 bg-dorado mx-auto rounded-full mb-6"></div>
+
+      <!-- Breve texto -->
+      <p
+        class="text-lg md:text-xl lg:text-2xl text-white font-normal leading-relaxed max-w-4xl mx-auto mb-14"
+      >
+        Conocé el camino claro, seguro y confidencial que ponemos a tu
+        disposición para escucharte, orientarte y brindarte el respaldo que
+        necesitás en cada paso.
+      </p>
+
+      <!-- Contenedor en 2 columnas: Izquierda (pasos 1 a 3) y Derecha (Compromiso e ícono) -->
+      <div
+        class="flex flex-col lg:flex-row items-center lg:items-start justify-between gap-12 text-left"
+      >
+        <!-- Columna izquierda: Pasos numerados del 1 al 3 con línea vertical dorada -->
+        <div
+          class="w-full lg:w-7/12 relative pl-6 md:pl-10 border-l-2 border-dorado space-y-10"
+        >
+          <!-- Paso 1 -->
+          <div class="flex items-start gap-4 md:gap-6">
+            <div
+              class="shrink-0 w-14 h-14 md:w-16 md:h-16 rounded-full border-2 border-dorado bg-azul-marino text-dorado flex items-center justify-center font-extrabold text-2xl md:text-3xl shadow-md"
+            >
+              1
+            </div>
+            <div class="pt-1">
+              <h3 class="text-dorado font-extrabold text-2xl md:text-3xl mb-2">
+                Primer contacto y escucha segura
+              </h3>
+              <p
+                class="text-white/95 text-base md:text-lg lg:text-xl leading-relaxed"
+              >
+                Todo comienza con un mensaje o una llamada. Al comunicarte con
+                nosotros, tendrás un miembro dispuesto a escucharte con total
+                reserva y sin prejuicios. Vos decidís qué y cuánto querés
+                contar.
+              </p>
+            </div>
+          </div>
+
+          <!-- Paso 2 -->
+          <div class="flex items-start gap-4 md:gap-6">
+            <div
+              class="shrink-0 w-14 h-14 md:w-16 md:h-16 rounded-full border-2 border-dorado bg-azul-marino text-dorado flex items-center justify-center font-extrabold text-2xl md:text-3xl shadow-md"
+            >
+              2
+            </div>
+            <div class="pt-1">
+              <h3 class="text-dorado font-extrabold text-2xl md:text-3xl mb-2">
+                Evaluación y ayuda personalizada
+              </h3>
+              <p
+                class="text-white/95 text-base md:text-lg lg:text-xl leading-relaxed"
+              >
+                Se analiza tu situación de manera integral. Se te explica con
+                claridad cuáles son las opciones disponibles, tus derechos y los
+                protocolos vigentes.
+              </p>
+            </div>
+          </div>
+
+          <!-- Paso 3 -->
+          <div class="flex items-start gap-4 md:gap-6">
+            <div
+              class="shrink-0 w-14 h-14 md:w-16 md:h-16 rounded-full border-2 border-dorado bg-azul-marino text-dorado flex items-center justify-center font-extrabold text-2xl md:text-3xl shadow-md"
+            >
+              3
+            </div>
+            <div class="pt-1">
+              <h3 class="text-dorado font-extrabold text-2xl md:text-3xl mb-2">
+                Seguimiento y apoyo continuo
+              </h3>
+              <p
+                class="text-white/95 text-base md:text-lg lg:text-xl leading-relaxed"
+              >
+                No te dejamos solo/a una vez iniciada la acción. Te brindamos
+                acompañamiento sostenido, tanto a nivel legal como emocional,
+                para transitar este proceso con la información y el respaldo que
+                necesitás para buscar las mejores vías de resolución
+                institucional disponibles.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Columna derecha: Ícono dorado + NUESTRO COMPROMISO -->
+        <div
+          class="w-full lg:w-5/12 flex flex-col items-center text-center lg:items-start lg:text-left bg-white/5 backdrop-blur-sm p-8 md:p-10 rounded-2xl border border-dorado/30 shadow-xl"
+        >
+          <!-- Ícono seguro-de-calidad.png coloreado en dorado -->
+          <div
+            class="w-28 h-28 md:w-36 md:h-36 bg-dorado mb-6"
+            style="-webkit-mask: url('/seguro-de-calidad.png') no-repeat center / contain; mask: url('/seguro-de-calidad.png') no-repeat center / contain;"
+          >
+          </div>
+
+          <!-- Título compromiso en blanco -->
+          <h3
+            class="text-white font-extrabold text-xl md:text-2xl uppercase tracking-wider mb-6"
+          >
+            NUESTRO COMPROMISO
+          </h3>
+
+          <!-- Lista de compromisos en blanco -->
+          <ul
+            class="space-y-4 text-white text-base md:text-lg lg:text-xl font-medium"
+          >
+            <li class="flex items-center gap-3">
+              <span class="text-dorado text-2xl font-extrabold">✓</span>
+              <span>Confidencialidad garantizada</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="text-dorado text-2xl font-extrabold">✓</span>
+              <span>Espacio seguro y reservado</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="text-dorado text-2xl font-extrabold">✓</span>
+              <span>Tu voz está protegida</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="text-dorado text-2xl font-extrabold">✓</span>
+              <span>Seguimos el camino a tu ritmo</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Botón de acción: Contactar a la Comisión -->
+      <div class="mt-14 text-center">
+        <a
+          href="/contacto"
+          class="inline-flex items-center justify-center gap-3 px-8 py-4 bg-dorado hover:bg-dorado-light text-azul-marino font-extrabold text-lg md:text-xl uppercase tracking-wider rounded-full shadow-lg hover:shadow-xl hover:shadow-dorado/20 transition-all duration-300 transform hover:-translate-y-0.5"
+        >
+          <span>Contactar a la Comisión</span>
+          <svg
+            class="w-5 h-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2.5"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ Sección: El rol del testigo ═══ -->
+  <section
+    class="bg-white text-azul-marino py-16 sm:py-20 px-6 md:px-12 lg:px-20 relative"
+  >
+    <div class="max-w-7xl mx-auto text-center">
+      <!-- Badge decorativo -->
+      <span
+        class="inline-block text-bordo font-bold text-sm md:text-base uppercase tracking-widest mb-3 px-4 py-1.5 rounded-full bg-bordo/10 border border-bordo/20"
+      >
+        Tu rol es clave
+      </span>
+
+      <!-- Título principal (sin cambios) -->
+      <h2
+        class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-azul-marino uppercase tracking-tight mb-4 [text-wrap:balance]"
+      >
+        Si sos testigo, <span class="text-bordo">tu apoyo lo cambia todo</span>
+      </h2>
+
+      <!-- Separador elegante -->
+      <div class="w-24 h-1 bg-dorado mx-auto rounded-full mb-12"></div>
+
+      <!-- Bullets / Tarjetas de concientización (con íconos y efecto bien visible) -->
+      <div
+        class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 text-left mb-14"
+      >
+        <!-- Bullet 1 -->
+        <div
+          class="bg-white border-2 border-bordo/20 border-t-[8px] border-t-bordo p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between"
+        >
+          <div>
+            <div
+              class="w-14 h-14 rounded-full bg-bordo/10 border-2 border-bordo/30 text-bordo flex items-center justify-center mb-6 shadow-sm"
+            >
+              <svg
+                class="w-7 h-7"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2.5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"
+                ></path>
+              </svg>
+            </div>
+            <p
+              class="text-azul-marino text-lg md:text-xl font-extrabold leading-relaxed"
+            >
+              El maltrato laboral se alimenta del silencio. Si presenciás una
+              situación de violencia hacia otra persona, tu intervención desde
+              lo humano es clave.
+            </p>
+          </div>
+        </div>
+
+        <!-- Bullet 2 -->
+        <div
+          class="bg-white border-2 border-dorado/30 border-t-[8px] border-t-dorado p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between"
+        >
+          <div>
+            <div
+              class="w-14 h-14 rounded-full bg-dorado/20 border-2 border-dorado/40 text-dorado-dark flex items-center justify-center mb-6 shadow-sm"
+            >
+              <svg
+                class="w-7 h-7"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2.5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"
+                ></path>
+              </svg>
+            </div>
+            <p
+              class="text-azul-marino text-lg md:text-xl font-extrabold leading-relaxed"
+            >
+              Acercate a esa persona, escuchá y ayudale a ver que no tiene por
+              qué aguantar esa situación.
+            </p>
+          </div>
+        </div>
+
+        <!-- Bullet 3 -->
+        <div
+          class="bg-white border-2 border-bordo/20 border-t-[8px] border-t-bordo p-6 md:p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between"
+        >
+          <div>
+            <div
+              class="w-14 h-14 rounded-full bg-bordo/10 border-2 border-bordo/30 text-bordo flex items-center justify-center mb-6 shadow-sm"
+            >
+              <svg
+                class="w-7 h-7"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2.5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                ></path>
+              </svg>
+            </div>
+            <p
+              class="text-azul-marino text-lg md:text-xl font-extrabold leading-relaxed"
+            >
+              Brindale tu contención, animala a buscar ayuda y hacele saber que
+              cuenta con tu respaldo como testigo si decide actuar.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Caja con bordes redondeados como mensaje final (Icono + Texto en 2 líneas centrados juntos) -->
+      <div
+        class="bg-gradient-to-r from-azul-marino to-azul-marino-dark text-white p-8 md:p-10 rounded-2xl border-2 border-dorado/40 shadow-xl max-w-7xl mx-auto relative overflow-hidden flex items-center justify-center"
+      >
+        <div
+          class="inline-flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8 mx-auto"
+        >
+          <!-- Icono de dos manos uniéndose a la izquierda -->
+          <div
+            class="shrink-0 w-24 h-24 md:w-28 md:h-28 rounded-full bg-azul-marino border-[6px] border-dorado p-3 flex items-center justify-center shadow-xl"
+          >
+            <img
+              src="/manos_unidas.png"
+              alt="Manos unidas en apoyo"
+              class="w-full h-full object-contain"
+            />
+          </div>
+          <!-- Texto del mensaje final centrado en 2 líneas exactas -->
+          <p
+            class="text-base md:text-lg lg:text-xl text-white font-extrabold leading-relaxed max-w-4xl text-center md:text-left"
+          >
+            A veces, saber que alguien más lo vio y te apoya es todo lo que se
+            necesita para pedir ayuda. Tu empatía puede ser el impulso que
+            necesita para salir de&nbsp;ahí.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 </Layout>
