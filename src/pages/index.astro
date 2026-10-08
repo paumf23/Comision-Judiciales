@@ -3,7 +3,7 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-  <main class="relative min-h-fit py-4 xl:py-0 xl:aspect-[1280/486]">
+  <main class="relative min-h-fit py-8 md:py-10 min-[1200px]:py-0 min-[1200px]:aspect-[1280/486]">
     <!-- Imagen de fondo -->
     <img
       src="/fondo.jpeg"
@@ -16,21 +16,21 @@ import Layout from "../layouts/Layout.astro";
     >
     </div>
 
-    <!-- Contenido del hero (alineado desde arriba para reducir espacio con el nav) -->
+    <!-- Contenido del hero -->
     <div
-      class="relative z-10 flex flex-col items-center justify-start h-full px-4 xl:px-8 pt-3 xl:pt-4 pb-6 xl:pb-8"
+      class="relative z-10 flex flex-col items-center justify-center h-full px-4 xl:px-8 py-4 xl:py-3 w-full max-w-7xl mx-auto"
     >
       <!-- Mensaje de bienvenida -->
-      <div class="text-center mb-8 max-w-7xl w-full">
+      <div class="text-center mb-3 xl:mb-4 max-w-5xl w-full">
         <h2
-          class="text-2xl md:text-3xl lg:text-4xl font-extrabold uppercase leading-tight mb-3 [text-wrap:balance]"
+          class="text-xl md:text-2xl xl:text-3xl font-extrabold uppercase leading-tight mb-2 [text-wrap:balance]"
         >
           <span class="text-azul-marino">Por un entorno laboral libre de </span>
           <br />
           <span class="text-bordo">violencia: dignidad y justicia</span>
         </h2>
         <p
-          class="text-lg md:text-xl lg:text-2xl text-azul-marino font-extrabold leading-snug mb-3 max-w-6xl mx-auto [text-wrap:balance]"
+          class="text-sm md:text-base xl:text-lg text-azul-marino font-extrabold leading-snug mb-2 max-w-4xl mx-auto [text-wrap:balance]"
         >
           Somos una agrupación independiente, autoconvocada y federal integrada
           por trabajadores de los Poderes Judiciales y Ministerios Públicos
@@ -38,7 +38,7 @@ import Layout from "../layouts/Layout.astro";
           erradicacion de la violencia en el ámbito laboral.
         </p>
         <p
-          class="text-sm md:text-base lg:text-lg text-azul-marino font-semibold leading-relaxed max-w-6xl mx-auto [text-wrap:balance]"
+          class="text-xs md:text-sm xl:text-base text-azul-marino font-semibold leading-relaxed max-w-4xl mx-auto [text-wrap:balance]"
         >
           Como espacio de lucha te ofrecemos escucha activa, libre de juicios,
           con todo el respaldo humano necesario para acompañarte en tu
@@ -48,17 +48,17 @@ import Layout from "../layouts/Layout.astro";
 
       <!-- Cards -->
       <div
-        class="flex flex-col md:flex-row items-stretch justify-center gap-6 lg:gap-8 w-full max-w-7xl"
+        class="flex flex-col md:flex-row items-stretch justify-center gap-5 xl:gap-6 w-full max-w-5xl"
       >
         <!-- Card: Nuestra Misión -->
-        <div class="flex-1 relative pt-10">
+        <div class="flex-1 relative pt-6 xl:pt-7">
           <!-- Icono sobresaliente -->
           <div class="absolute top-0 left-1/2 -translate-x-1/2 z-10">
             <div
-              class="w-20 h-20 rounded-full bg-white border-[6px] border-bordo flex items-center justify-center shadow-lg"
+              class="w-14 h-14 xl:w-16 xl:h-16 rounded-full bg-white border-[4px] xl:border-[5px] border-bordo flex items-center justify-center shadow-lg"
             >
               <div
-                class="w-10 h-10 bg-bordo"
+                class="w-7 h-7 xl:w-8 xl:h-8 bg-bordo"
                 style="-webkit-mask: url('/balanza.png') no-repeat center / contain; mask: url('/balanza.png') no-repeat center / contain;"
               >
               </div>
@@ -66,15 +66,15 @@ import Layout from "../layouts/Layout.astro";
           </div>
           <!-- Card body -->
           <div
-            class="bg-white/65 backdrop-blur-md rounded-lg border-[8px] border-bordo pt-12 pb-6 px-5 text-center h-full shadow-md"
+            class="bg-white/65 backdrop-blur-md rounded-lg border-[5px] xl:border-[6px] border-bordo pt-8 xl:pt-9 pb-3 xl:pb-4 px-4 text-center h-full shadow-md flex flex-col justify-center"
           >
             <h3
-              class="text-azul-marino font-extrabold text-base lg:text-lg uppercase tracking-wide mb-2"
+              class="text-azul-marino font-extrabold text-sm xl:text-base uppercase tracking-wide mb-1"
             >
               Nuestra Misión:
             </h3>
             <p
-              class="text-bordo font-bold text-sm lg:text-base leading-relaxed"
+              class="text-bordo font-bold text-xs xl:text-sm leading-snug"
             >
               Garantizar el respeto y la dignidad
             </p>
@@ -82,14 +82,14 @@ import Layout from "../layouts/Layout.astro";
         </div>
 
         <!-- Card: Marco Legal -->
-        <div class="flex-1 relative pt-10">
+        <div class="flex-1 relative pt-6 xl:pt-7">
           <!-- Icono sobresaliente -->
           <div class="absolute top-0 left-1/2 -translate-x-1/2 z-10">
             <div
-              class="w-20 h-20 rounded-full bg-white border-[6px] border-bordo flex items-center justify-center shadow-lg"
+              class="w-14 h-14 xl:w-16 xl:h-16 rounded-full bg-white border-[4px] xl:border-[5px] border-bordo flex items-center justify-center shadow-lg"
             >
               <div
-                class="w-10 h-10 bg-bordo"
+                class="w-7 h-7 xl:w-8 xl:h-8 bg-bordo"
                 style="-webkit-mask: url('/marco_legal.png') no-repeat center / contain; mask: url('/marco_legal.png') no-repeat center / contain;"
               >
               </div>
@@ -97,15 +97,15 @@ import Layout from "../layouts/Layout.astro";
           </div>
           <!-- Card body -->
           <div
-            class="bg-white/65 backdrop-blur-md rounded-lg border-[8px] border-bordo pt-12 pb-6 px-5 text-center h-full shadow-md"
+            class="bg-white/65 backdrop-blur-md rounded-lg border-[5px] xl:border-[6px] border-bordo pt-8 xl:pt-9 pb-3 xl:pb-4 px-4 text-center h-full shadow-md flex flex-col justify-center"
           >
             <h3
-              class="text-azul-marino font-extrabold text-base lg:text-lg uppercase tracking-wide mb-2"
+              class="text-azul-marino font-extrabold text-sm xl:text-base uppercase tracking-wide mb-1"
             >
               Marco Legal:
             </h3>
             <p
-              class="text-bordo font-bold text-sm lg:text-base leading-relaxed"
+              class="text-bordo font-bold text-xs xl:text-sm leading-snug"
             >
               Acceda a protocolos y leyes vigentes
             </p>
@@ -113,14 +113,14 @@ import Layout from "../layouts/Layout.astro";
         </div>
 
         <!-- Card: Apoyo & Mediación -->
-        <div class="flex-1 relative pt-10">
+        <div class="flex-1 relative pt-6 xl:pt-7">
           <!-- Icono sobresaliente -->
           <div class="absolute top-0 left-1/2 -translate-x-1/2 z-10">
             <div
-              class="w-20 h-20 rounded-full bg-white border-[6px] border-bordo flex items-center justify-center shadow-lg"
+              class="w-14 h-14 xl:w-16 xl:h-16 rounded-full bg-white border-[4px] xl:border-[5px] border-bordo flex items-center justify-center shadow-lg"
             >
               <div
-                class="w-10 h-10 bg-bordo"
+                class="w-7 h-7 xl:w-8 xl:h-8 bg-bordo"
                 style="-webkit-mask: url('/personas.png') no-repeat center / contain; mask: url('/personas.png') no-repeat center / contain;"
               >
               </div>
@@ -128,15 +128,15 @@ import Layout from "../layouts/Layout.astro";
           </div>
           <!-- Card body -->
           <div
-            class="bg-white/65 backdrop-blur-md rounded-lg border-[8px] border-bordo pt-12 pb-6 px-5 text-center h-full shadow-md"
+            class="bg-white/65 backdrop-blur-md rounded-lg border-[5px] xl:border-[6px] border-bordo pt-8 xl:pt-9 pb-3 xl:pb-4 px-4 text-center h-full shadow-md flex flex-col justify-center"
           >
             <h3
-              class="text-azul-marino font-extrabold text-base lg:text-lg uppercase tracking-wide mb-2"
+              class="text-azul-marino font-extrabold text-sm xl:text-base uppercase tracking-wide mb-1"
             >
               Apoyo & Mediación:
             </h3>
             <p
-              class="text-bordo font-bold text-sm lg:text-base leading-relaxed"
+              class="text-bordo font-bold text-xs xl:text-sm leading-snug"
             >
               Canales de ayuda y seguimiento
             </p>

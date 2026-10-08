@@ -31,20 +31,20 @@ const currentPath = Astro.url.pathname;
     <div class="px-6 lg:px-10 py-4">
 
       <!-- Contenido centrado: logo + título + links (Desktop) -->
-      <div class="hidden md:flex items-center justify-center gap-6">
+      <div class="hidden lg:flex items-center justify-center gap-6">
         <!-- Logo -->
         <a href="/" class="shrink-0" aria-label="Inicio">
           <img
             src="/LOGO.jpeg"
             alt="Logo Comisión de Judiciales"
-            class="w-16 h-16 md:w-20 md:h-20 rounded-full object-cover"
+            class="w-16 h-16 lg:w-20 lg:h-20 rounded-full object-cover"
           />
         </a>
 
         <!-- Título + línea + links -->
         <div class="flex flex-col">
           <!-- Título -->
-          <h1 class="text-white font-semibold text-xl lg:text-2xl whitespace-nowrap">
+          <h1 class="text-white font-semibold text-lg lg:text-xl xl:text-2xl whitespace-nowrap text-center">
             Comisión de Judiciales por un trabajo libre de violencia y acoso
           </h1>
 
@@ -52,12 +52,12 @@ const currentPath = Astro.url.pathname;
           <div class="w-full h-px bg-dorado/40 my-3"></div>
 
           <!-- Links principales centrados -->
-          <div class="flex items-center justify-center gap-8 lg:gap-10">
+          <div class="flex items-center justify-center gap-6 lg:gap-8 xl:gap-10">
             {mainLinks.filter(link => link.href !== '/necesito-ayuda').map((link) => (
               <a
                 href={link.href}
                 class:list={[
-                  'text-base lg:text-lg font-medium transition-colors duration-200',
+                  'text-sm lg:text-base xl:text-lg font-medium transition-colors duration-200 whitespace-nowrap',
                   currentPath === link.href
                     ? 'text-dorado'
                     : 'text-white/90 hover:text-dorado',
@@ -70,7 +70,7 @@ const currentPath = Astro.url.pathname;
             <!-- Botón CTA: Necesito ayuda ahora -->
             <a
               href="/necesito-ayuda"
-              class="px-5 py-2 bg-dorado text-azul-marino font-semibold text-base lg:text-lg rounded-md hover:bg-dorado-light transition-all duration-200 hover:shadow-lg hover:shadow-dorado/20"
+              class="px-4 lg:px-5 py-2 bg-dorado text-azul-marino font-semibold text-sm lg:text-base xl:text-lg rounded-md hover:bg-dorado-light transition-all duration-200 hover:shadow-lg hover:shadow-dorado/20 whitespace-nowrap"
             >
               Necesito ayuda ahora
             </a>
@@ -78,8 +78,8 @@ const currentPath = Astro.url.pathname;
         </div>
       </div>
 
-      <!-- Mobile: logo + título + hamburguesa -->
-      <div class="md:hidden flex items-center gap-3">
+      <!-- Mobile / Tablet: logo + título + hamburguesa -->
+      <div class="lg:hidden flex items-center gap-3">
         <a href="/" class="shrink-0" aria-label="Inicio">
           <img
             src="/LOGO.jpeg"
@@ -87,7 +87,7 @@ const currentPath = Astro.url.pathname;
             class="w-12 h-12 rounded-full object-cover"
           />
         </a>
-        <p class="text-white font-semibold text-xs sm:text-sm leading-tight flex-1">
+        <p class="text-white font-semibold text-xs sm:text-sm md:text-base leading-tight flex-1">
           Comisión de Judiciales por un trabajo libre de violencia y acoso
         </p>
         <button
@@ -111,14 +111,14 @@ const currentPath = Astro.url.pathname;
   <div class="h-[3px] bg-dorado"></div>
 
   <!-- ═══ Fila inferior: Bordó ═══ -->
-  <div class="bg-bordo hidden md:block">
-    <div class="px-6 lg:px-10">
-      <div class="flex items-center justify-center gap-2 lg:gap-4 h-11">
+  <div class="bg-bordo hidden lg:block">
+    <div class="px-4 lg:px-8 xl:px-10">
+      <div class="flex items-center justify-center gap-1 lg:gap-2 xl:gap-4 h-11 overflow-x-auto">
         {secondaryLinks.map((link) => (
           <a
             href={link.href}
             class:list={[
-              'px-3 py-1.5 text-sm lg:text-base font-medium rounded transition-colors duration-200',
+              'px-2.5 lg:px-3 py-1.5 text-xs lg:text-sm xl:text-base font-medium rounded transition-colors duration-200 whitespace-nowrap',
               currentPath === link.href
                 ? 'text-dorado bg-white/10'
                 : 'text-white/90 hover:text-white hover:bg-white/5',
@@ -132,10 +132,10 @@ const currentPath = Astro.url.pathname;
   </div>
 
   <!-- Línea dorada inferior -->
-  <div class="h-[3px] bg-dorado hidden md:block"></div>
+  <div class="h-[3px] bg-dorado hidden lg:block"></div>
 
   <!-- ═══ Menú móvil ═══ -->
-  <div id="mobile-menu" class="md:hidden hidden bg-azul-marino-dark border-t border-white/10">
+  <div id="mobile-menu" class="lg:hidden hidden bg-azul-marino-dark border-t border-white/10">
     <div class="px-4 py-4 space-y-1">
       {mainLinks.map((link) => (
         <a
