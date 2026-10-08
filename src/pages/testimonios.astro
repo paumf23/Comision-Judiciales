@@ -1,0 +1,405 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+// Datos de los 3 testimonios
+const testimonials = [
+  {
+    id: "testimonio-1",
+    numero: "01",
+    ambito: "Poder Judicial",
+    resumen:
+      "Nunca imaginé que el mismo sistema al que le dediqué gran parte de mi vida iba a terminar enfermándome. Callarse también enferma; ningún trabajo debería costarnos la salud, mucho menos la vida.",
+    autor: "Trabajador/a Judicial",
+    parrafos: [
+      "Desde hace años trabajo en el Poder Judicial. Siempre creí en la importancia de mi función, en la justicia y en el valor del esfuerzo. Pero nunca imaginé que el mismo sistema al que le dediqué gran parte de mi vida iba a terminar enfermándome.",
+      "Todo empezó después de denunciar irregularidades dentro de mi ámbito laboral. A partir de ahí comenzaron los hostigamientos, las presiones, las observaciones constantes y un clima de persecución que se volvió insoportable. Cada día iba a trabajar con angustia. Dejé de dormir bien. Vivía en estado de alerta permanente. Mi salud mental empezó a deteriorarse de manera progresiva.",
+      "Busqué ayuda profesional y comencé tratamiento psiquiátrico. Mi médico me indicó reposo laboral porque el cuadro era grave. Sin embargo, lejos de encontrar contención institucional, me encontré con un sistema frío y violento que puso en duda mi padecimiento una y otra vez.",
+      "Las juntas médicas fueron una experiencia profundamente revictimizante. Sentí que no me escuchaban, que debía justificar constantemente mi sufrimiento y que se desconfiaba de mí desde el primer momento. Llegué a salir de esas entrevistas peor de lo que había entrado: con más ansiedad, más miedo y más sensación de indefensión.",
+      "Mientras yo intentaba recuperarme, comenzaron a desplazarme de mi trabajo. Utilizaron mi situación de salud como argumento para apartarme. Sentí que me castigaban por haber denunciado y por haberme enfermado.",
+      "Lo más doloroso fue comprender que, dentro del Poder Judicial, muchas veces las víctimas quedan completamente solas. El mismo sistema que debería proteger derechos termina funcionando como un espacio de disciplinamiento, silenciamiento y desgaste.",
+      "Durante mucho tiempo sentí culpa, vergüenza y miedo de contar lo que me estaba pasando. Miedo a no ser creído. Miedo a perder mi trabajo. Miedo a quedar marcado. Pero entendí que callarse también enferma.",
+      "Hoy comparto mi testimonio porque sé que no soy la única persona que atravesó algo así. Somos muchxs lxs trabajadorxs judiciales que sufrimos violencia laboral, hostigamiento y maltrato institucional en silencio.",
+      "Necesitamos protocolos reales, espacios seguros y organismos que acompañen a las víctimas en lugar de profundizar el daño.",
+    ],
+    destacadoFinal: "Ningún trabajo debería costarnos la salud. Mucho menos la vida.",
+    cierre: "✊ Organizadxs, avanzamos.",
+  },
+  {
+    id: "testimonio-2",
+    numero: "02",
+    ambito: "Poder Judicial de Río Negro",
+    resumen:
+      "Nadie debería enfermarse por trabajar. Nadie debería sentir miedo, angustia o culpa por defender un trato digno. Contar esto no es fácil. Pero el silencio también duele.",
+    autor: "Trabajador/a Judicial",
+    parrafos: [
+      "Durante varios meses trabajé en una institución del Poder Judicial de Río Negro. Hoy puedo poner en palabras algo que durante mucho tiempo no logré ver con claridad: yo también estaba siendo víctima de maltrato laboral.",
+      "En ese momento solo podía identificar lo que ocurría con una compañera. Presenciaba humillaciones, gritos y destrato constantes hacia ella. Me generaba angustia, incomodidad e impotencia. Sentía que algo estaba mal, pero no imaginaba cuánto me estaba afectando a mí también.",
+      "Mientras intentaba sostener mi trabajo y acompañar emocionalmente esa situación, empecé a enfermarme. Primero apareció el insomnio. Después la ansiedad, el vértigo y un agotamiento emocional que no podía explicar. Vivía en estado de alerta. Mi cuerpo empezó a hablar lo que yo todavía no podía comprender.",
+      "Con el tiempo también comenzaron situaciones hacia mí: cuestionamientos permanentes sobre mi horario laboral, exclusión de reuniones, falta de tareas, desvalorización profesional y un silencioso aislamiento dentro del equipo de trabajo. Pero en ese momento seguía creyendo que el problema era solo “el clima laboral” y no una situación de violencia sostenida.",
+      "Cuando finalmente decidí contactar a Asuntos Internos para pedir orientación y expresar mi preocupación por lo que estaba ocurriendo, recibí un llamado para informarme que existía una valoración negativa sobre mi desempeño realizada por mi superior. Lo más impactante fue saber que esa evaluación había sido hecha mientras esa persona estaba de viaje y prácticamente sin contacto laboral conmigo.",
+      "Ese momento fue un quiebre. Empecé a entender que hablar, pedir ayuda y no mirar hacia otro lado también tenía consecuencias.",
+      "Hoy escribo esto porque el maltrato laboral muchas veces es invisible, gradual y silencioso. Una tarda en darse cuenta de que está siendo vulnerada. Empieza justificando situaciones, minimizando el dolor y creyendo que puede soportarlo. Hasta que el cuerpo y la salud emocional ya no pueden más.",
+      "Nadie debería enfermarse por trabajar. Nadie debería sentir miedo, angustia o culpa por defender un trato digno.",
+    ],
+    destacadoFinal: "Nadie debería enfermarse por trabajar. Nadie debería sentir miedo, angustia o culpa por defender un trato digno.",
+    cierre: "Contar esto no es fácil. Pero el silencio también duele.",
+  },
+  {
+    id: "testimonio-3",
+    numero: "03",
+    ambito: "Poder Judicial",
+    resumen:
+      "Ninguna trabajadora debería tener que elegir entre su maternidad, su salud y su trabajo. La violencia laboral hacia mujeres y madres deja heridas profundas que atraviesan toda la vida.",
+    autor: "Trabajadora Judicial",
+    parrafos: [
+      "Ingresé al Poder Judicial siendo muy joven. Durante años trabajé con compromiso, responsabilidad y muchísimo esfuerzo. Creía que el mérito, la vocación y el sacrificio eran suficientes para crecer profesionalmente. Pero todo cambió cuando decidí ser madre.",
+      "Durante mi embarazo atravesé situaciones que jamás imaginé vivir dentro de un ámbito que debería proteger derechos. En plena pandemia, me pidieron que ocultara mi embarazo para seguir trabajando presencialmente. Sentí miedo. Miedo por mi salud y por la de mi bebé. Aun así seguí trabajando porque entendía que negarme podía traerme consecuencias.",
+      "Con el tiempo empecé a notar que mi maternidad se había convertido en un problema para mis superiores. Me negaron oportunidades laborales que me habían prometido, mientras compañeros con menos experiencia sí accedían a ascensos. Comprendí que lo que realmente molestaba no era mi desempeño, sino el hecho de haber sido madre.",
+      "También me quitaron algo profundamente doloroso: el derecho a amamantar a mi hija. Me ordenaron dejar de usar la hora de lactancia porque “hacía falta gente” en la oficina. Recuerdo la angustia de extraerme leche encerrada en un baño para no generar conflictos y evitarme una mastitis. Terminaba mis jornadas llorando y corriendo desesperadamente para llegar a ver a mi bebé.",
+      "El ambiente laboral se volvió cada vez más hostil. Dejaron de llamarme por mi nombre y comenzaron a tratarme como si fuera un objeto más dentro de la oficina. Sentía que buscaban degradarme, disciplinarme y hacerme sentir que reclamar derechos tenía consecuencias.",
+      "A medida que intentaba pedir ayuda, la situación empeoraba. Presenté denuncias, aporté pruebas, ofrecí testigos. Pero las investigaciones se cerraban sin escucharme realmente. Nadie parecía dispuesto a ver el daño que estaba sufriendo. Sentí que el sistema protegía a quienes ejercían violencia y abandonaba a quienes se animaban a denunciarla.",
+      "El desgaste físico y emocional fue devastador. Perdí muchísimo peso, mi salud mental se deterioró y tuve que iniciar tratamiento psicológico y psiquiátrico. Llegó un momento en que apenas podía sostener a mi hija en brazos.",
+      "Lo más doloroso fue la violencia institucional posterior. En vez de encontrar contención, encontré más burocracia, indiferencia y revictimización. Me separaron de mi familia durante meses por negarme traslados y alternativas laborales que hubieran permitido cuidar mi salud y mantener unida a mi hija con sus padres.",
+      "Después de todo esto, ya no volví a mirar al Poder Judicial de la misma manera. Perdí la confianza en una institución que debería garantizar derechos y que, sin embargo, muchas veces reproduce violencia, discriminación y abuso de poder hacia sus propias trabajadoras.",
+      "Comparto este testimonio porque sé que no soy la única mujer judicial que atravesó situaciones similares. Muchas callan por miedo, por desgaste o porque sienten que denunciar no sirve para nada.",
+      "Pero ninguna trabajadora debería tener que elegir entre su maternidad, su salud y su trabajo.",
+      "La violencia laboral también existe dentro del Poder Judicial. Y cuando se ejerce contra mujeres y madres, deja heridas profundas que atraviesan toda la vida.",
+    ],
+    destacadoFinal: "Pero ninguna trabajadora debería tener que elegir entre su maternidad, su salud y su trabajo.",
+    cierre: "✊ Organizadxs, avanzamos.",
+  },
+];
+---
+
+<Layout
+  title="Testimonios - Comisión de Judiciales por un trabajo libre de violencia y acoso"
+  description="Historias y relatos en primera persona de trabajadoras y trabajadores judiciales que rompen el silencio frente a la violencia laboral e institucional."
+>
+  <main
+    class="min-h-[calc(100vh-140px)] bg-azul-marino text-white pt-12 md:pt-16 lg:pt-20 pb-16 px-4 sm:px-8 md:px-12 lg:px-16 w-full overflow-x-hidden relative"
+    style="font-family: 'Montserrat', sans-serif;"
+  >
+    <!-- Fondo decorativo sutil coherente con el resto del sitio -->
+    <div
+      class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_rgba(166,137,92,0.08)_0%,_transparent_60%)] pointer-events-none"
+    >
+    </div>
+    <div
+      class="absolute bottom-0 left-0 w-full h-96 bg-[radial-gradient(circle_at_bottom_left,_rgba(83,30,72,0.25)_0%,_transparent_70%)] pointer-events-none"
+    >
+    </div>
+
+    <!-- Contenedor con los mismos márgenes de la sección Quiénes Somos (max-w-7xl mx-auto) -->
+    <div class="relative z-10 w-full max-w-7xl mx-auto flex flex-col gap-8 md:gap-10">
+      <!-- ═══ Título Testimonios centrado con subrayado y margen superior cómodo ═══ -->
+      <div class="w-full text-center mt-2 md:mt-4">
+        <div class="inline-block border-b-2 border-dorado pb-2 text-center">
+          <h1
+            class="font-black text-dorado uppercase tracking-wide text-center"
+            style="font-family: 'Montserrat', sans-serif; color: #a6895c; font-size: clamp(2rem, 3.5vw, 3.25rem); line-height: 1.1; font-weight: 900; margin: 0;"
+          >
+            Testimonios
+          </h1>
+        </div>
+      </div>
+
+      <!-- ═══ Párrafos empáticos centrados (sin caja ni incentivo) ═══ -->
+      <div class="w-full max-w-5xl mx-auto text-center flex flex-col gap-5 px-2">
+        <p
+          class="text-white font-normal text-center"
+          style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.75; margin: 0;"
+        >
+          Cada testimonio es un acto de valentía colectiva que rompe el silencio y expone lo que durante años se intentó invisibilizar dentro del Poder Judicial. Sabemos lo doloroso que es atravesar el hostigamiento, la persecución o el maltrato en soledad, y la angustia que produce encontrarse con un sistema que muchas veces desconfía o da la espalda.
+        </p>
+
+        <p
+          class="text-white font-normal text-center"
+          style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.75; margin: 0;"
+        >
+          Si estás viviendo o viviste una situación similar, tu historia importa. Ponerlo en palabras no solo ayuda a desarmar el peso del aislamiento, sino que también protege a otrxs compañerxs y como espacio de lucha nos da herramientas para transformar esta realidad. Este es un espacio seguro, solidario y estrictamente confidencial para que puedas alzar tu voz a tu propio tiempo.
+        </p>
+      </div>
+
+      <!-- ═══ Sección de las 3 Cards (Tono blanco apagado #dfe5ec, letras azules, botón en dorado) ═══ -->
+      <section class="w-full mt-2" aria-label="Tarjetas de testimonios">
+        <div class="testimonios-grid">
+          {testimonials.map((testimonio) => (
+            <article
+              class="rounded-2xl md:rounded-3xl p-6 sm:p-8 md:p-9 shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col justify-between border-2 border-transparent hover:border-dorado h-full min-h-[300px]"
+              style="background-color: #dfe5ec;"
+            >
+              <!-- Frase resumen del testimonio entre comillas (centrada, texto azul marino) -->
+              <div class="flex-1 flex items-center justify-center my-auto py-4">
+                <blockquote
+                  class="text-azul-marino font-bold text-base sm:text-lg md:text-xl leading-relaxed text-center"
+                  style="color: #092646;"
+                >
+                  "{testimonio.resumen}"
+                </blockquote>
+              </div>
+
+              <!-- Botón + Leer testimonio completo alineado abajo a la derecha en color dorado -->
+              <div class="pt-4 flex justify-end items-center">
+                <button
+                  type="button"
+                  data-dialog-open={`dialog-${testimonio.id}`}
+                  class="inline-flex items-center gap-1.5 font-extrabold text-sm sm:text-base transition-colors duration-200 cursor-pointer group"
+                  style="color: #a6895c;"
+                  aria-haspopup="dialog"
+                >
+                  <span class="group-hover:underline">+ Leer testimonio completo</span>
+                </button>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <!-- ═══ Frase de llamado a la lucha centrada debajo de las cards ═══ -->
+      <div class="w-full text-center mt-6 mb-4 flex flex-col items-center gap-2">
+        <p
+          class="text-white font-extrabold text-base sm:text-lg md:text-xl tracking-wide max-w-4xl text-center"
+          style="font-family: 'Montserrat', sans-serif;"
+        >
+          Frente al silencio y la impunidad: solidaridad, organización y lucha colectiva.
+        </p>
+        <p
+          class="text-dorado font-extrabold text-lg sm:text-xl flex items-center justify-center gap-2"
+          style="color: #a6895c;"
+        >
+          <span>✊</span>
+          <span>¡Por un Poder Judicial digno, con justicia y sin violencia! Sumate.</span>
+        </p>
+      </div>
+    </div>
+
+    <!-- ════════════════════════════════════════════════════════════════ -->
+    <!-- ═══ MODALES CON BARRA LATERAL VISIBLE Y TEXTO JUSTIFICADO ═══ -->
+    <!-- ════════════════════════════════════════════════════════════════ -->
+    {testimonials.map((testimonio) => (
+      <dialog
+        id={`dialog-${testimonio.id}`}
+        class="testimonio-dialog"
+        aria-labelledby={`dialog-title-${testimonio.id}`}
+      >
+        <div class="modal-dialog-inner">
+          <!-- Header del Modal fijo arriba con botón X de cierre -->
+          <div class="px-6 py-4 sm:py-5 bg-[#07192b] border-b border-dorado/30 flex items-center justify-between shrink-0">
+            <div class="flex items-center gap-3 text-left">
+              <span class="w-2.5 h-6 bg-dorado rounded-full shrink-0"></span>
+              <div>
+                <span class="text-dorado text-xs uppercase tracking-widest font-bold block">
+                  Testimonio #{testimonio.numero} • {testimonio.ambito}
+                </span>
+                <h3
+                  id={`dialog-title-${testimonio.id}`}
+                  class="text-white text-base sm:text-lg md:text-xl font-black uppercase tracking-wide leading-tight"
+                >
+                  Relato en primera persona
+                </h3>
+              </div>
+            </div>
+
+            <!-- Botón Cerrar (X) -->
+            <button
+              type="button"
+              data-dialog-close={`dialog-${testimonio.id}`}
+              class="w-10 h-10 rounded-full bg-white/10 hover:bg-dorado text-white hover:text-azul-marino flex items-center justify-center text-2xl font-bold transition-colors cursor-pointer shrink-0 ml-4"
+              aria-label="Cerrar modal"
+            >
+              ✕
+            </button>
+          </div>
+
+          <!-- Cuerpo scrollable con barra lateral visible siempre y texto justificado -->
+          <div class="modal-dialog-body">
+            <div class="space-y-4 text-white/95 text-base sm:text-lg leading-relaxed text-justify pb-8" style="text-align: justify;">
+              {testimonio.parrafos.map((parrafo) => (
+                <p class="font-normal text-justify" style="text-align: justify;">
+                  {parrafo}
+                </p>
+              ))}
+
+              {testimonio.destacadoFinal && (
+                <div class="my-6 p-5 rounded-xl bg-bordo/40 border-l-4 border-dorado text-justify" style="text-align: justify;">
+                  <p class="text-lg sm:text-xl font-extrabold text-white leading-snug">
+                    {testimonio.destacadoFinal}
+                  </p>
+                </div>
+              )}
+
+              {testimonio.cierre && (
+                <p class="text-dorado font-extrabold text-lg sm:text-xl pt-2 text-center pb-4" style="color: #a6895c;">
+                  {testimonio.cierre}
+                </p>
+              )}
+            </div>
+          </div>
+
+          <!-- Footer del Modal fijo abajo (sin botón cerrar, solo nota de confidencialidad) -->
+          <div class="px-6 py-3 sm:py-3.5 bg-[#07192b] border-t border-dorado/30 flex items-center justify-center shrink-0">
+            <p class="text-xs text-white/70 italic text-center w-full">
+              * Testimonio resguardado bajo estrictas normas de confidencialidad institucional.
+            </p>
+          </div>
+        </div>
+      </dialog>
+    ))}
+  </main>
+</Layout>
+
+<style>
+  /* ── Grid responsivo de 3 columnas para testimonios ── */
+  .testimonios-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    width: 100%;
+  }
+
+  @media (min-width: 768px) {
+    .testimonios-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.75rem;
+    }
+  }
+
+  /* ── Estilos para el dialog nativo ── */
+  dialog.testimonio-dialog {
+    border: 2px solid #a6895c;
+    background-color: #0c243e;
+    color: #ffffff;
+    border-radius: 1.25rem;
+    padding: 0;
+    max-width: 52rem;
+    width: min(92vw, 52rem);
+    height: 82vh;
+    max-height: 82vh;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.85);
+    margin: auto;
+    overflow: hidden;
+  }
+
+  dialog.testimonio-dialog::backdrop {
+    background: rgba(5, 22, 48, 0.85);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+
+  dialog.testimonio-dialog[open] {
+    display: flex;
+    flex-direction: column;
+    animation: dialogFadeIn 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  @keyframes dialogFadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.96) translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1) translateY(0);
+    }
+  }
+
+  .modal-dialog-inner {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  /* ── Barra lateral de scroll siempre visible y estilizada ── */
+  .modal-dialog-body {
+    flex: 1 1 auto;
+    min-height: 0;
+    overflow-y: scroll; /* Forzar la presencia de la barra de scroll */
+    padding: 1.5rem 1.75rem 2rem 1.75rem;
+    scrollbar-width: thin;
+    scrollbar-color: #a6895c rgba(255, 255, 255, 0.15);
+  }
+
+  .modal-dialog-body::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  .modal-dialog-body::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 6px;
+    margin: 4px;
+  }
+
+  .modal-dialog-body::-webkit-scrollbar-thumb {
+    background: #a6895c;
+    border-radius: 6px;
+    border: 2px solid #0c243e;
+  }
+
+  .modal-dialog-body::-webkit-scrollbar-thumb:hover {
+    background: #bfaa7a;
+  }
+</style>
+
+<script is:inline>
+  function initDialogs() {
+    // Abrir modales
+    document.querySelectorAll('[data-dialog-open]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const dialogId = btn.getAttribute('data-dialog-open');
+        if (!dialogId) return;
+        const dialog = document.getElementById(dialogId);
+        if (dialog && typeof dialog.showModal === 'function') {
+          dialog.showModal();
+          document.body.style.overflow = 'hidden';
+          // Resetear el scroll al principio al abrir
+          const body = dialog.querySelector('.modal-dialog-body');
+          if (body) body.scrollTop = 0;
+        }
+      });
+    });
+
+    // Cerrar modales desde botones con data-dialog-close (como la X de la cabecera)
+    document.querySelectorAll('[data-dialog-close]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const dialogId = btn.getAttribute('data-dialog-close');
+        if (!dialogId) return;
+        const dialog = document.getElementById(dialogId);
+        if (dialog && typeof dialog.close === 'function') {
+          dialog.close();
+          document.body.style.overflow = '';
+        }
+      });
+    });
+
+    // Cerrar haciendo click en el backdrop del dialog
+    document.querySelectorAll('dialog.testimonio-dialog').forEach((dialog) => {
+      dialog.addEventListener('click', (event) => {
+        const rect = dialog.getBoundingClientRect();
+        const isInDialog = (
+          rect.top <= event.clientY &&
+          event.clientY <= rect.top + rect.height &&
+          rect.left <= event.clientX &&
+          event.clientX <= rect.left + rect.width
+        );
+        if (!isInDialog) {
+          dialog.close();
+          document.body.style.overflow = '';
+        }
+      });
+
+      dialog.addEventListener('close', () => {
+        document.body.style.overflow = '';
+      });
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initDialogs);
+  } else {
+    initDialogs();
+  }
+  document.addEventListener('astro:page-load', initDialogs);
+</script>
