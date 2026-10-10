@@ -76,7 +76,7 @@ const testimonials = [
   description="Historias y relatos en primera persona de trabajadoras y trabajadores judiciales que rompen el silencio frente a la violencia laboral e institucional."
 >
   <main
-    class="min-h-[calc(100vh-140px)] bg-azul-marino text-white pt-12 md:pt-16 lg:pt-20 pb-16 px-4 sm:px-8 md:px-12 lg:px-16 w-full overflow-x-hidden relative"
+    class="min-h-[calc(100vh-140px)] bg-azul-marino text-white pt-4 md:pt-6 lg:pt-8 pb-4 md:pb-6 px-4 sm:px-8 md:px-12 lg:px-16 w-full overflow-x-hidden relative"
     style="font-family: 'Montserrat', sans-serif;"
   >
     <!-- Fondo decorativo sutil coherente con el resto del sitio -->
@@ -90,13 +90,13 @@ const testimonials = [
     </div>
 
     <!-- Contenedor con los mismos márgenes de la sección Quiénes Somos (max-w-7xl mx-auto) -->
-    <div class="relative z-10 w-full max-w-7xl mx-auto flex flex-col gap-8 md:gap-10">
-      <!-- ═══ Título Testimonios centrado con subrayado y margen superior cómodo ═══ -->
-      <div class="w-full text-center mt-2 md:mt-4">
-        <div class="inline-block border-b-2 border-dorado pb-2 text-center">
+    <div class="relative z-10 w-full max-w-7xl mx-auto flex flex-col gap-4 md:gap-5">
+      <!-- ═══ Título Testimonios centrado con subrayado ═══ -->
+      <div class="w-full text-center">
+        <div class="inline-block border-b-2 border-dorado pb-1.5 text-center">
           <h1
             class="font-black text-dorado uppercase tracking-wide text-center"
-            style="font-family: 'Montserrat', sans-serif; color: #a6895c; font-size: clamp(2rem, 3.5vw, 3.25rem); line-height: 1.1; font-weight: 900; margin: 0;"
+            style="font-family: 'Montserrat', sans-serif; color: #a6895c; font-size: clamp(1.85rem, 2.8vw, 2.75rem); line-height: 1.1; font-weight: 900; margin: 0;"
           >
             Testimonios
           </h1>
@@ -104,34 +104,34 @@ const testimonials = [
       </div>
 
       <!-- ═══ Párrafos empáticos centrados (sin caja ni incentivo) ═══ -->
-      <div class="w-full max-w-5xl mx-auto text-center flex flex-col gap-5 px-2">
+      <div class="w-full max-w-5xl mx-auto text-center flex flex-col gap-2.5 sm:gap-3 px-2">
         <p
           class="text-white font-normal text-center"
-          style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.75; margin: 0;"
+          style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.85rem, 1vw, 1.05rem); line-height: 1.55; margin: 0;"
         >
           Cada testimonio es un acto de valentía colectiva que rompe el silencio y expone lo que durante años se intentó invisibilizar dentro del Poder Judicial. Sabemos lo doloroso que es atravesar el hostigamiento, la persecución o el maltrato en soledad, y la angustia que produce encontrarse con un sistema que muchas veces desconfía o da la espalda.
         </p>
 
         <p
           class="text-white font-normal text-center"
-          style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.75; margin: 0;"
+          style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.85rem, 1vw, 1.05rem); line-height: 1.55; margin: 0;"
         >
           Si estás viviendo o viviste una situación similar, tu historia importa. Ponerlo en palabras no solo ayuda a desarmar el peso del aislamiento, sino que también protege a otrxs compañerxs y como espacio de lucha nos da herramientas para transformar esta realidad. Este es un espacio seguro, solidario y estrictamente confidencial para que puedas alzar tu voz a tu propio tiempo.
         </p>
       </div>
 
       <!-- ═══ Sección de las 3 Cards (Tono blanco apagado #dfe5ec, letras azules, botón en dorado) ═══ -->
-      <section class="w-full mt-2" aria-label="Tarjetas de testimonios">
+      <section class="w-full mt-1" aria-label="Tarjetas de testimonios">
         <div class="testimonios-grid">
           {testimonials.map((testimonio) => (
             <article
-              class="rounded-2xl md:rounded-3xl p-6 sm:p-8 md:p-9 shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col justify-between border-2 border-transparent hover:border-dorado h-full min-h-[300px]"
+              class="rounded-2xl md:rounded-3xl p-5 sm:p-6 md:p-7 shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col justify-between border-2 border-transparent hover:border-dorado h-full min-h-[200px] md:min-h-[220px]"
               style="background-color: #dfe5ec;"
             >
               <!-- Frase resumen del testimonio entre comillas (centrada, texto azul marino) -->
-              <div class="flex-1 flex items-center justify-center my-auto py-4">
+              <div class="flex-1 flex items-center justify-center my-auto py-2 md:py-3">
                 <blockquote
-                  class="text-azul-marino font-bold text-base sm:text-lg md:text-xl leading-relaxed text-center"
+                  class="text-azul-marino font-bold text-sm sm:text-base md:text-[1.05rem] leading-snug md:leading-relaxed text-center"
                   style="color: #092646;"
                 >
                   "{testimonio.resumen}"
@@ -139,7 +139,7 @@ const testimonials = [
               </div>
 
               <!-- Botón + Leer testimonio completo alineado abajo a la derecha en color dorado -->
-              <div class="pt-4 flex justify-end items-center">
+              <div class="pt-2 md:pt-3 flex justify-end items-center">
                 <button
                   type="button"
                   data-dialog-open={`dialog-${testimonio.id}`}
@@ -156,15 +156,15 @@ const testimonials = [
       </section>
 
       <!-- ═══ Frase de llamado a la lucha centrada debajo de las cards ═══ -->
-      <div class="w-full text-center mt-6 mb-4 flex flex-col items-center gap-2">
+      <div class="w-full text-center mt-2 md:mt-3 mb-1 flex flex-col items-center gap-1 sm:gap-1.5">
         <p
-          class="text-white font-extrabold text-base sm:text-lg md:text-xl tracking-wide max-w-4xl text-center"
+          class="text-white font-extrabold text-sm sm:text-base md:text-lg tracking-wide max-w-4xl text-center"
           style="font-family: 'Montserrat', sans-serif;"
         >
           Frente al silencio y la impunidad: solidaridad, organización y lucha colectiva.
         </p>
         <p
-          class="text-dorado font-extrabold text-lg sm:text-xl flex items-center justify-center gap-2"
+          class="text-dorado font-extrabold text-base sm:text-lg flex items-center justify-center gap-2"
           style="color: #a6895c;"
         >
           <span>✊</span>

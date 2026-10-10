@@ -1,0 +1,1356 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ModalHerramienta from "../components/ModalHerramienta.astro";
+import { herramientas } from "../data/herramientas";
+---
+
+<Layout
+  title="Información útil y Herramientas - Comisión de Judiciales por un trabajo libre de violencia y acoso"
+  description="Herramientas y recomendaciones sobre qué hacer si estás atravesando violencia o acoso laboral en el ámbito judicial."
+>
+  <main
+    class="min-h-[calc(100vh-140px)] bg-[#531e48] text-white pt-4 md:pt-8 lg:pt-10 pb-16 px-4 sm:px-8 md:px-12 lg:px-16 overflow-x-hidden w-full"
+    style="background-color: #531e48; font-family: 'Montserrat', sans-serif;"
+  >
+    <!-- Contenedor con los mismos márgenes laterales que los párrafos de Testimonios (max-w-3xl mx-auto) -->
+    <div
+      class="relative z-10 w-full max-w-7xl mx-auto flex flex-col gap-4 md:gap-5"
+    >
+      <!-- ═══ TÍTULO PRINCIPAL: Centrado y subrayado igual que en Testimonios ═══ -->
+      <div class="w-full text-center">
+        <div class="inline-block border-b-2 border-dorado pb-1.5 text-center">
+          <h1
+            class="font-black text-dorado uppercase tracking-wide text-center"
+            style="font-family: 'Montserrat', sans-serif; color: #a6895c; font-size: clamp(1.65rem, 2.5vw, 2.5rem); line-height: 1.15; font-weight: 900; margin: 0;"
+          >
+            Información útil
+          </h1>
+        </div>
+      </div>
+
+      <!-- ═══ BLOQUE 1: Pregunta disparadora y contexto inicial ═══ -->
+      <div class="w-full text-left flex flex-col gap-4">
+        <h2
+          class="font-extrabold text-dorado text-lg sm:text-xl md:text-[1.35rem]"
+          style="font-family: 'Montserrat', sans-serif; color: #a6895c; font-weight: 800; line-height: 1.35; margin: 0;"
+        >
+          ¿Qué hacer si estás atravesando violencia o acoso laboral?
+        </h2>
+
+        <p
+          class="text-white font-normal text-justify"
+          style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.75; text-align: justify; text-justify: inter-word; margin: 0;"
+        >
+          Si creés que estás siendo víctima de violencia o acoso laboral, es
+          importante saber que <strong class="font-bold text-white"
+            >no estás solx</strong
+          > y que existen herramientas para proteger tus derechos.
+        </p>
+
+        <p
+          class="text-white font-normal text-justify"
+          style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.75; text-align: justify; text-justify: inter-word; margin: 0;"
+        >
+          Muchas personas tardan meses o incluso años en identificar que las
+          situaciones que viven constituyen violencia laboral. Es frecuente
+          minimizar los hechos, pensar que forman parte del trabajo o sentir
+          temor a las represalias.
+        </p>
+
+        <p
+          class="text-white font-normal text-justify"
+          style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.75; text-align: justify; text-justify: inter-word; margin: 0;"
+        >
+          Si esto te está ocurriendo, te recomendamos actuar con calma,
+          preservar la mayor cantidad posible de información y buscar
+          acompañamiento.
+        </p>
+      </div>
+
+      <!-- ═══ LÍNEA DE SEPARACIÓN 1 ═══ -->
+      <div class="w-full my-1 sm:my-2" aria-hidden="true">
+        <div
+          class="w-full h-[2px] rounded-full"
+          style="background-color: #a6895c;"
+        >
+        </div>
+      </div>
+
+      <!-- ═══ BLOQUE 2: Punto 1 - No minimices lo que está ocurriendo ═══ -->
+      <div class="w-full text-left flex flex-col gap-4">
+        <h2
+          class="font-extrabold text-dorado text-lg sm:text-xl md:text-[1.35rem]"
+          style="font-family: 'Montserrat', sans-serif; color: #a6895c; font-weight: 800; line-height: 1.35; margin: 0;"
+        >
+          1. No minimices lo que está ocurriendo
+        </h2>
+
+        <p
+          class="text-white font-normal text-justify"
+          style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.75; text-align: justify; text-justify: inter-word; margin: 0;"
+        >
+          La violencia laboral suele comenzar de manera progresiva.
+        </p>
+
+        <p
+          class="text-white font-normal text-justify"
+          style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.75; text-align: justify; text-justify: inter-word; margin: 0;"
+        >
+          Pequeñas humillaciones, descalificaciones, aislamiento o sobrecarga de
+          tareas pueden parecer hechos aislados, pero cuando se repiten en el
+          tiempo pueden constituir un proceso de hostigamiento.
+        </p>
+
+        <p
+          class="text-white font-normal text-justify"
+          style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.75; text-align: justify; text-justify: inter-word; margin: 0;"
+        >
+          No esperes a que la situación empeore para comenzar a documentarla.
+        </p>
+      </div>
+
+      <!-- ═══ LÍNEA DE SEPARACIÓN 2 ═══ -->
+      <div class="w-full my-1 sm:my-2" aria-hidden="true">
+        <div
+          class="w-full h-[2px] rounded-full"
+          style="background-color: #a6895c;"
+        >
+        </div>
+      </div>
+
+      <!-- ═══ BLOQUE 3: Punto 2 - Conservá toda la prueba posible ═══ -->
+      <div class="w-full text-left flex flex-col gap-4">
+        <h2
+          class="font-extrabold text-dorado text-lg sm:text-xl md:text-[1.35rem]"
+          style="font-family: 'Montserrat', sans-serif; color: #a6895c; font-weight: 800; line-height: 1.35; margin: 0;"
+        >
+          2. Conservá toda la prueba posible
+        </h2>
+
+        <p
+          class="text-white font-normal text-justify"
+          style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.75; text-align: justify; text-justify: inter-word; margin: 0;"
+        >
+          La prueba puede ser determinante para acreditar los hechos.
+        </p>
+
+        <p
+          class="text-white font-normal text-justify"
+          style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.75; text-align: justify; text-justify: inter-word; margin: 0;"
+        >
+          Siempre que sea posible y conforme a la legislación vigente, procurá
+          conservar:
+        </p>
+
+        <!-- Subtítulo: Documentación -->
+        <h3
+          class="font-extrabold text-dorado text-base sm:text-lg md:text-[1.2rem] mt-1"
+          style="font-family: 'Montserrat', sans-serif; color: #a6895c; font-weight: 800; line-height: 1.4; margin: 0;"
+        >
+          Documentación
+        </h3>
+
+        <!-- Lista de viñetas: Documentación -->
+        <ul class="flex flex-col gap-2.5 pl-1 sm:pl-2">
+          <li class="flex items-start gap-3">
+            <span
+              class="inline-block w-2.5 h-2.5 rounded-full mt-2 shrink-0"
+              style="background-color: #a6895c;"
+              aria-hidden="true"></span>
+            <span
+              class="text-white font-normal flex-1 text-left"
+              style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.6;"
+            >
+              correos electrónicos
+            </span>
+          </li>
+
+          <li class="flex items-start gap-3">
+            <span
+              class="inline-block w-2.5 h-2.5 rounded-full mt-2 shrink-0"
+              style="background-color: #a6895c;"
+              aria-hidden="true"></span>
+            <span
+              class="text-white font-normal flex-1 text-left"
+              style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.6;"
+            >
+              notas
+            </span>
+          </li>
+
+          <li class="flex items-start gap-3">
+            <span
+              class="inline-block w-2.5 h-2.5 rounded-full mt-2 shrink-0"
+              style="background-color: #a6895c;"
+              aria-hidden="true"></span>
+            <span
+              class="text-white font-normal flex-1 text-left"
+              style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.6;"
+            >
+              memorandos
+            </span>
+          </li>
+
+          <li class="flex items-start gap-3">
+            <span
+              class="inline-block w-2.5 h-2.5 rounded-full mt-2 shrink-0"
+              style="background-color: #a6895c;"
+              aria-hidden="true"></span>
+            <span
+              class="text-white font-normal flex-1 text-left"
+              style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.6;"
+            >
+              resoluciones
+            </span>
+          </li>
+
+          <li class="flex items-start gap-3">
+            <span
+              class="inline-block w-2.5 h-2.5 rounded-full mt-2 shrink-0"
+              style="background-color: #a6895c;"
+              aria-hidden="true"></span>
+            <span
+              class="text-white font-normal flex-1 text-left"
+              style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.6;"
+            >
+              expedientes
+            </span>
+          </li>
+
+          <li class="flex items-start gap-3">
+            <span
+              class="inline-block w-2.5 h-2.5 rounded-full mt-2 shrink-0"
+              style="background-color: #a6895c;"
+              aria-hidden="true"></span>
+            <span
+              class="text-white font-normal flex-1 text-left"
+              style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.6;"
+            >
+              mensajes institucionales
+            </span>
+          </li>
+
+          <li class="flex items-start gap-3">
+            <span
+              class="inline-block w-2.5 h-2.5 rounded-full mt-2 shrink-0"
+              style="background-color: #a6895c;"
+              aria-hidden="true"></span>
+            <span
+              class="text-white font-normal flex-1 text-left"
+              style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.6;"
+            >
+              mensajes de WhatsApp
+            </span>
+          </li>
+
+          <li class="flex items-start gap-3">
+            <span
+              class="inline-block w-2.5 h-2.5 rounded-full mt-2 shrink-0"
+              style="background-color: #a6895c;"
+              aria-hidden="true"></span>
+            <span
+              class="text-white font-normal flex-1 text-left"
+              style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.6;"
+            >
+              mensajes de Teams, Slack u otras plataformas laborales
+            </span>
+          </li>
+        </ul>
+
+        <!-- Párrafo final de Documentación -->
+        <p
+          class="text-white font-normal text-justify mt-2"
+          style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.75; text-align: justify; text-justify: inter-word; margin: 0;"
+        >
+          Nunca alteres el contenido original.
+        </p>
+      </div>
+
+      <!-- ═══ LÍNEA DE SEPARACIÓN 3 ═══ -->
+      <div class="w-full my-1 sm:my-2" aria-hidden="true">
+        <div
+          class="w-full h-[2px] rounded-full"
+          style="background-color: #a6895c;"
+        >
+        </div>
+      </div>
+
+      <!-- ═══ BLOQUE 4: Capturas de pantalla ═══ -->
+      <div class="w-full text-left flex flex-col gap-4">
+        <h3
+          class="font-extrabold text-dorado text-base sm:text-lg md:text-[1.2rem]"
+          style="font-family: 'Montserrat', sans-serif; color: #a6895c; font-weight: 800; line-height: 1.4; margin: 0;"
+        >
+          Capturas de pantalla
+        </h3>
+
+        <p
+          class="text-white font-normal text-justify"
+          style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.75; text-align: justify; text-justify: inter-word; margin: 0;"
+        >
+          Realizá capturas completas donde pueda visualizarse:
+        </p>
+
+        <!-- Lista de viñetas: Capturas de pantalla -->
+        <ul class="flex flex-col gap-2.5 pl-1 sm:pl-2">
+          <li class="flex items-start gap-3">
+            <span
+              class="inline-block w-2.5 h-2.5 rounded-full mt-2 shrink-0"
+              style="background-color: #a6895c;"
+              aria-hidden="true"></span>
+            <span
+              class="text-white font-normal flex-1 text-left"
+              style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.6;"
+            >
+              fecha
+            </span>
+          </li>
+
+          <li class="flex items-start gap-3">
+            <span
+              class="inline-block w-2.5 h-2.5 rounded-full mt-2 shrink-0"
+              style="background-color: #a6895c;"
+              aria-hidden="true"></span>
+            <span
+              class="text-white font-normal flex-1 text-left"
+              style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.6;"
+            >
+              hora
+            </span>
+          </li>
+
+          <li class="flex items-start gap-3">
+            <span
+              class="inline-block w-2.5 h-2.5 rounded-full mt-2 shrink-0"
+              style="background-color: #a6895c;"
+              aria-hidden="true"></span>
+            <span
+              class="text-white font-normal flex-1 text-left"
+              style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.6;"
+            >
+              remitente
+            </span>
+          </li>
+
+          <li class="flex items-start gap-3">
+            <span
+              class="inline-block w-2.5 h-2.5 rounded-full mt-2 shrink-0"
+              style="background-color: #a6895c;"
+              aria-hidden="true"></span>
+            <span
+              class="text-white font-normal flex-1 text-left"
+              style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.6;"
+            >
+              conversación completa
+            </span>
+          </li>
+        </ul>
+
+        <p
+          class="text-white font-normal text-justify mt-2"
+          style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.75; text-align: justify; text-justify: inter-word; margin: 0;"
+        >
+          Siempre conservá también el archivo original.
+        </p>
+      </div>
+
+      <!-- ═══ LÍNEA DE SEPARACIÓN 4 ═══ -->
+      <div class="w-full my-1 sm:my-2" aria-hidden="true">
+        <div
+          class="w-full h-[2px] rounded-full"
+          style="background-color: #a6895c;"
+        >
+        </div>
+      </div>
+
+      <!-- ═══ BLOQUE 5: Hasheo o preservación de archivos digitales ═══ -->
+      <div class="w-full text-left flex flex-col gap-4">
+        <h3
+          class="font-extrabold text-dorado text-base sm:text-lg md:text-[1.2rem]"
+          style="font-family: 'Montserrat', sans-serif; color: #a6895c; font-weight: 800; line-height: 1.4; margin: 0;"
+        >
+          Hasheo o preservación de archivos digitales
+        </h3>
+
+        <p
+          class="text-white font-normal text-justify"
+          style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.75; text-align: justify; text-justify: inter-word; margin: 0;"
+        >
+          Cuando la prueba sea digital (capturas, fotografías, videos, audios o
+          documentos electrónicos), puede ser conveniente preservar su
+          autenticidad mediante mecanismos de resguardo como el <strong
+            class="font-bold text-white">hasheo digital</strong
+          >, que permite acreditar que el archivo no fue modificado desde su
+          creación.
+        </p>
+
+        <p
+          class="text-white font-normal text-justify"
+          style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.75; text-align: justify; text-justify: inter-word; margin: 0;"
+        >
+          Este tipo de medidas puede facilitar futuras pericias informáticas.
+        </p>
+      </div>
+
+      <!-- ═══ LÍNEA DE SEPARACIÓN 5 ═══ -->
+      <div class="w-full my-1 sm:my-2" aria-hidden="true">
+        <div
+          class="w-full h-[2px] rounded-full"
+          style="background-color: #a6895c;"
+        >
+        </div>
+      </div>
+
+      <!-- ═══ BLOQUE 6: Audios ═══ -->
+      <div class="w-full text-left flex flex-col gap-4">
+        <h3
+          class="font-extrabold text-dorado text-base sm:text-lg md:text-[1.2rem]"
+          style="font-family: 'Montserrat', sans-serif; color: #a6895c; font-weight: 800; line-height: 1.4; margin: 0;"
+        >
+          Audios
+        </h3>
+
+        <p
+          class="text-white font-normal text-justify"
+          style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.75; text-align: justify; text-justify: inter-word; margin: 0;"
+        >
+          En algunos ordenamientos jurídicos es posible grabar conversaciones
+          propias. Antes de hacerlo, es recomendable informarse sobre la
+          normativa aplicable en tu jurisdicción.
+        </p>
+
+        <p
+          class="text-white font-normal text-justify"
+          style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.75; text-align: justify; text-justify: inter-word; margin: 0;"
+        >
+          Si realizás una grabación:
+        </p>
+
+        <!-- Lista de viñetas: Audios -->
+        <ul class="flex flex-col gap-2.5 pl-1 sm:pl-2">
+          <li class="flex items-start gap-3">
+            <span
+              class="inline-block w-2.5 h-2.5 rounded-full mt-2 shrink-0"
+              style="background-color: #a6895c;"
+              aria-hidden="true"></span>
+            <span
+              class="text-white font-normal flex-1 text-left"
+              style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.6;"
+            >
+              conservá el archivo original;
+            </span>
+          </li>
+
+          <li class="flex items-start gap-3">
+            <span
+              class="inline-block w-2.5 h-2.5 rounded-full mt-2 shrink-0"
+              style="background-color: #a6895c;"
+              aria-hidden="true"></span>
+            <span
+              class="text-white font-normal flex-1 text-left"
+              style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.6;"
+            >
+              evitá editarlo;
+            </span>
+          </li>
+
+          <li class="flex items-start gap-3">
+            <span
+              class="inline-block w-2.5 h-2.5 rounded-full mt-2 shrink-0"
+              style="background-color: #a6895c;"
+              aria-hidden="true"></span>
+            <span
+              class="text-white font-normal flex-1 text-left"
+              style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.6;"
+            >
+              mantené visibles la fecha y hora de creación del archivo;
+            </span>
+          </li>
+
+          <li class="flex items-start gap-3">
+            <span
+              class="inline-block w-2.5 h-2.5 rounded-full mt-2 shrink-0"
+              style="background-color: #a6895c;"
+              aria-hidden="true"></span>
+            <span
+              class="text-white font-normal flex-1 text-left"
+              style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.6;"
+            >
+              realizá una copia de resguardo.
+            </span>
+          </li>
+        </ul>
+
+        <p
+          class="text-white font-normal text-justify mt-2"
+          style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.75; text-align: justify; text-justify: inter-word; margin: 0;"
+        >
+          Estos datos pueden resultar relevantes para una eventual pericia
+          informática.
+        </p>
+      </div>
+
+      <!-- ═══ LÍNEA DE SEPARACIÓN 6 ═══ -->
+      <div class="w-full my-1 sm:my-2" aria-hidden="true">
+        <div
+          class="w-full h-[2px] rounded-full"
+          style="background-color: #a6895c;"
+        >
+        </div>
+      </div>
+
+      <!-- ═══ BLOQUE 7: Fotografías ═══ -->
+      <div class="w-full text-left flex flex-col gap-4">
+        <h3
+          class="font-extrabold text-dorado text-base sm:text-lg md:text-[1.2rem]"
+          style="font-family: 'Montserrat', sans-serif; color: #a6895c; font-weight: 800; line-height: 1.4; margin: 0;"
+        >
+          Fotografías
+        </h3>
+
+        <p
+          class="text-white font-normal text-justify"
+          style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.75; text-align: justify; text-justify: inter-word; margin: 0;"
+        >
+          Pueden ser útiles para documentar:
+        </p>
+
+        <!-- Lista de viñetas: Fotografías -->
+        <ul class="flex flex-col gap-2.5 pl-1 sm:pl-2">
+          <li class="flex items-start gap-3">
+            <span
+              class="inline-block w-2.5 h-2.5 rounded-full mt-2 shrink-0"
+              style="background-color: #a6895c;"
+              aria-hidden="true"></span>
+            <span
+              class="text-white font-normal flex-1 text-left"
+              style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.6;"
+            >
+              carteles
+            </span>
+          </li>
+
+          <li class="flex items-start gap-3">
+            <span
+              class="inline-block w-2.5 h-2.5 rounded-full mt-2 shrink-0"
+              style="background-color: #a6895c;"
+              aria-hidden="true"></span>
+            <span
+              class="text-white font-normal flex-1 text-left"
+              style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.6;"
+            >
+              condiciones del lugar de trabajo
+            </span>
+          </li>
+
+          <li class="flex items-start gap-3">
+            <span
+              class="inline-block w-2.5 h-2.5 rounded-full mt-2 shrink-0"
+              style="background-color: #a6895c;"
+              aria-hidden="true"></span>
+            <span
+              class="text-white font-normal flex-1 text-left"
+              style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.6;"
+            >
+              daños materiales
+            </span>
+          </li>
+
+          <li class="flex items-start gap-3">
+            <span
+              class="inline-block w-2.5 h-2.5 rounded-full mt-2 shrink-0"
+              style="background-color: #a6895c;"
+              aria-hidden="true"></span>
+            <span
+              class="text-white font-normal flex-1 text-left"
+              style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.6;"
+            >
+              asignación de espacios
+            </span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span
+              class="inline-block w-2.5 h-2.5 rounded-full mt-2 shrink-0"
+              style="background-color: #a6895c;"
+              aria-hidden="true"></span>
+            <span
+              class="text-white font-normal flex-1 text-left"
+              style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.6;"
+            >
+              modificaciones del ambiente laboral
+            </span>
+          </li>
+        </ul>
+        <p
+          class="text-white font-normal text-justify"
+          style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.75; text-align: justify; text-justify: inter-word; margin: 0;"
+        >
+          Conservá siempre los archivos originales.
+        </p>
+      </div>
+
+      <!-- ═══ LÍNEA DE SEPARACIÓN 7 ═══ -->
+      <div class="w-full my-1 sm:my-2" aria-hidden="true">
+        <div
+          class="w-full h-[2px] rounded-full"
+          style="background-color: #a6895c;"
+        >
+        </div>
+      </div>
+
+      <!-- ═══ BLOQUE 8: Punto 3 - Elaborá un registro cronológico de los hechos ═══ -->
+      <div class="w-full text-left flex flex-col gap-4">
+        <h2
+          class="font-extrabold text-dorado text-lg sm:text-xl md:text-[1.35rem]"
+          style="font-family: 'Montserrat', sans-serif; color: #a6895c; font-weight: 800; line-height: 1.35; margin: 0;"
+        >
+          3. Elaborá un registro cronológico de los hechos
+        </h2>
+
+        <p
+          class="text-white font-normal text-justify"
+          style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.75; text-align: justify; text-justify: inter-word; margin: 0;"
+        >
+          Una herramienta muy útil consiste en llevar un registro personal.
+        </p>
+
+        <p
+          class="text-white font-normal text-justify"
+          style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.75; text-align: justify; text-justify: inter-word; margin: 0;"
+        >
+          Anotá cada episodio indicando, en lo posible:
+        </p>
+
+        <!-- Lista de viñetas: Registro cronológico -->
+        <ul class="flex flex-col gap-2.5 pl-1 sm:pl-2">
+          <li class="flex items-start gap-3">
+            <span
+              class="inline-block w-2.5 h-2.5 rounded-full mt-2 shrink-0"
+              style="background-color: #a6895c;"
+              aria-hidden="true"></span>
+            <span
+              class="text-white font-normal flex-1 text-left"
+              style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.6;"
+            >
+              fecha
+            </span>
+          </li>
+
+          <li class="flex items-start gap-3">
+            <span
+              class="inline-block w-2.5 h-2.5 rounded-full mt-2 shrink-0"
+              style="background-color: #a6895c;"
+              aria-hidden="true"></span>
+            <span
+              class="text-white font-normal flex-1 text-left"
+              style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.6;"
+            >
+              horario
+            </span>
+          </li>
+
+          <li class="flex items-start gap-3">
+            <span
+              class="inline-block w-2.5 h-2.5 rounded-full mt-2 shrink-0"
+              style="background-color: #a6895c;"
+              aria-hidden="true"></span>
+            <span
+              class="text-white font-normal flex-1 text-left"
+              style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.6;"
+            >
+              lugar
+            </span>
+          </li>
+
+          <li class="flex items-start gap-3">
+            <span
+              class="inline-block w-2.5 h-2.5 rounded-full mt-2 shrink-0"
+              style="background-color: #a6895c;"
+              aria-hidden="true"></span>
+            <span
+              class="text-white font-normal flex-1 text-left"
+              style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.6;"
+            >
+              personas presentes
+            </span>
+          </li>
+
+          <li class="flex items-start gap-3">
+            <span
+              class="inline-block w-2.5 h-2.5 rounded-full mt-2 shrink-0"
+              style="background-color: #a6895c;"
+              aria-hidden="true"></span>
+            <span
+              class="text-white font-normal flex-1 text-left"
+              style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.6;"
+            >
+              qué ocurrió
+            </span>
+          </li>
+
+          <li class="flex items-start gap-3">
+            <span
+              class="inline-block w-2.5 h-2.5 rounded-full mt-2 shrink-0"
+              style="background-color: #a6895c;"
+              aria-hidden="true"></span>
+            <span
+              class="text-white font-normal flex-1 text-left"
+              style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.6;"
+            >
+              quién intervino
+            </span>
+          </li>
+
+          <li class="flex items-start gap-3">
+            <span
+              class="inline-block w-2.5 h-2.5 rounded-full mt-2 shrink-0"
+              style="background-color: #a6895c;"
+              aria-hidden="true"></span>
+            <span
+              class="text-white font-normal flex-1 text-left"
+              style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.6;"
+            >
+              cómo reaccionaste
+            </span>
+          </li>
+
+          <li class="flex items-start gap-3">
+            <span
+              class="inline-block w-2.5 h-2.5 rounded-full mt-2 shrink-0"
+              style="background-color: #a6895c;"
+              aria-hidden="true"></span>
+            <span
+              class="text-white font-normal flex-1 text-left"
+              style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.6;"
+            >
+              si existen documentos o testigos relacionados
+            </span>
+          </li>
+        </ul>
+
+        <p
+          class="text-white font-normal text-justify mt-2"
+          style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.75; text-align: justify; text-justify: inter-word; margin: 0;"
+        >
+          Este registro puede facilitar posteriormente la reconstrucción de los
+          hechos y la redacción de una denuncia.
+        </p>
+      </div>
+
+      <!-- ═══ LÍNEA DE SEPARACIÓN 8 ═══ -->
+      <div class="w-full my-1 sm:my-2" aria-hidden="true">
+        <div
+          class="w-full h-[2px] rounded-full"
+          style="background-color: #a6895c;"
+        >
+        </div>
+      </div>
+
+      <!-- ═══ BLOQUE 9: Punto 4 - Identificá posibles testigos ═══ -->
+      <div class="w-full text-left flex flex-col gap-4">
+        <h2
+          class="font-extrabold text-dorado text-lg sm:text-xl md:text-[1.35rem]"
+          style="font-family: 'Montserrat', sans-serif; color: #a6895c; font-weight: 800; line-height: 1.35; margin: 0;"
+        >
+          4. Identificá posibles testigos
+        </h2>
+
+        <p
+          class="text-white font-normal text-justify"
+          style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.75; text-align: justify; text-justify: inter-word; margin: 0;"
+        >
+          Los testigos pueden ser fundamentales.
+        </p>
+
+        <p
+          class="text-white font-normal text-justify"
+          style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.75; text-align: justify; text-justify: inter-word; margin: 0;"
+        >
+          No solamente quienes presenciaron directamente un episodio.
+        </p>
+
+        <p
+          class="text-white font-normal text-justify"
+          style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.75; text-align: justify; text-justify: inter-word; margin: 0;"
+        >
+          También pueden declarar personas que:
+        </p>
+
+        <!-- Lista de viñetas: Posibles testigos -->
+        <ul class="flex flex-col gap-2.5 pl-1 sm:pl-2">
+          <li class="flex items-start gap-3">
+            <span
+              class="inline-block w-2.5 h-2.5 rounded-full mt-2 shrink-0"
+              style="background-color: #a6895c;"
+              aria-hidden="true"></span>
+            <span
+              class="text-white font-normal flex-1 text-left"
+              style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.6;"
+            >
+              observaron cambios en el ambiente laboral;
+            </span>
+          </li>
+
+          <li class="flex items-start gap-3">
+            <span
+              class="inline-block w-2.5 h-2.5 rounded-full mt-2 shrink-0"
+              style="background-color: #a6895c;"
+              aria-hidden="true"></span>
+            <span
+              class="text-white font-normal flex-1 text-left"
+              style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.6;"
+            >
+              conocieron el estado emocional de la víctima;
+            </span>
+          </li>
+
+          <li class="flex items-start gap-3">
+            <span
+              class="inline-block w-2.5 h-2.5 rounded-full mt-2 shrink-0"
+              style="background-color: #a6895c;"
+              aria-hidden="true"></span>
+            <span
+              class="text-white font-normal flex-1 text-left"
+              style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.6;"
+            >
+              recibieron comentarios contemporáneos sobre los hechos;
+            </span>
+          </li>
+
+          <li class="flex items-start gap-3">
+            <span
+              class="inline-block w-2.5 h-2.5 rounded-full mt-2 shrink-0"
+              style="background-color: #a6895c;"
+              aria-hidden="true"></span>
+            <span
+              class="text-white font-normal flex-1 text-left"
+              style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.6;"
+            >
+              participaron de reuniones relacionadas con el conflicto.
+            </span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- ═══ LÍNEA DE SEPARACIÓN 9 ═══ -->
+      <div class="w-full my-1 sm:my-2" aria-hidden="true">
+        <div
+          class="w-full h-[2px] rounded-full"
+          style="background-color: #a6895c;"
+        >
+        </div>
+      </div>
+
+      <!-- ═══ BLOQUE 10: Punto 5 - Conservá certificados médicos ═══ -->
+      <div class="w-full text-left flex flex-col gap-4">
+        <h2
+          class="font-extrabold text-dorado text-lg sm:text-xl md:text-[1.35rem]"
+          style="font-family: 'Montserrat', sans-serif; color: #a6895c; font-weight: 800; line-height: 1.35; margin: 0;"
+        >
+          5. Conservá certificados médicos
+        </h2>
+
+        <p
+          class="text-white font-normal text-justify"
+          style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.75; text-align: justify; text-justify: inter-word; margin: 0;"
+        >
+          Si la situación afectó tu salud, guardá:
+        </p>
+
+        <!-- Lista de viñetas: Certificados médicos -->
+        <ul class="flex flex-col gap-2.5 pl-1 sm:pl-2">
+          <li class="flex items-start gap-3">
+            <span
+              class="inline-block w-2.5 h-2.5 rounded-full mt-2 shrink-0"
+              style="background-color: #a6895c;"
+              aria-hidden="true"></span>
+            <span
+              class="text-white font-normal flex-1 text-left"
+              style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.6;"
+            >
+              certificados médicos;
+            </span>
+          </li>
+
+          <li class="flex items-start gap-3">
+            <span
+              class="inline-block w-2.5 h-2.5 rounded-full mt-2 shrink-0"
+              style="background-color: #a6895c;"
+              aria-hidden="true"></span>
+            <span
+              class="text-white font-normal flex-1 text-left"
+              style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.6;"
+            >
+              historias clínicas;
+            </span>
+          </li>
+
+          <li class="flex items-start gap-3">
+            <span
+              class="inline-block w-2.5 h-2.5 rounded-full mt-2 shrink-0"
+              style="background-color: #a6895c;"
+              aria-hidden="true"></span>
+            <span
+              class="text-white font-normal flex-1 text-left"
+              style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.6;"
+            >
+              informes psicológicos;
+            </span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span
+              class="inline-block w-2.5 h-2.5 rounded-full mt-2 shrink-0"
+              style="background-color: #a6895c;"
+              aria-hidden="true"></span>
+            <span
+              class="text-white font-normal flex-1 text-left"
+              style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.6;"
+            >
+              informes de juntas médicas;
+            </span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span
+              class="inline-block w-2.5 h-2.5 rounded-full mt-2 shrink-0"
+              style="background-color: #a6895c;"
+              aria-hidden="true"></span>
+            <span
+              class="text-white font-normal flex-1 text-left"
+              style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.6;"
+            >
+              estudios complementarios;
+            </span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span
+              class="inline-block w-2.5 h-2.5 rounded-full mt-2 shrink-0"
+              style="background-color: #a6895c;"
+              aria-hidden="true"></span>
+            <span
+              class="text-white font-normal flex-1 text-left"
+              style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.6;"
+            >
+              licencias;
+            </span>
+          </li>
+        </ul>
+        <p
+          class="text-white font-normal text-justify"
+          style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.75; text-align: justify; text-justify: inter-word; margin: 0;"
+        >
+          La violencia laboral puede generar daños físicos y psíquicos que
+          constituyen elementos relevantes para comprender la gravedad del caso.
+        </p>
+      </div>
+
+      <!-- ═══ LÍNEA DE SEPARACIÓN 10 ═══ -->
+      <div class="w-full my-1 sm:my-2" aria-hidden="true">
+        <div
+          class="w-full h-[2px] rounded-full"
+          style="background-color: #a6895c;"
+        >
+        </div>
+      </div>
+
+      <!-- ═══ BLOQUE 11: Punto 6 - No elimines información ═══ -->
+      <div class="w-full text-left flex flex-col gap-4">
+        <h2
+          class="font-extrabold text-dorado text-lg sm:text-xl md:text-[1.35rem]"
+          style="font-family: 'Montserrat', sans-serif; color: #a6895c; font-weight: 800; line-height: 1.35; margin: 0;"
+        >
+          6. No elimines información
+        </h2>
+
+        <p
+          class="text-white font-normal text-justify"
+          style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.75; text-align: justify; text-justify: inter-word; margin: 0;"
+        >
+          Aunque hoy parezca poco importante, un mensaje, un correo o una nota
+          pueden adquirir gran relevancia con el paso del tiempo.
+        </p>
+
+        <p
+          class="text-white font-normal text-justify"
+          style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.75; text-align: justify; text-justify: inter-word; margin: 0;"
+        >
+          Conservá siempre los archivos originales.
+        </p>
+      </div>
+
+      <!-- ═══ LÍNEA DE SEPARACIÓN 11 ═══ -->
+      <div class="w-full my-1 sm:my-2" aria-hidden="true">
+        <div
+          class="w-full h-[2px] rounded-full"
+          style="background-color: #a6895c;"
+        >
+        </div>
+      </div>
+
+      <!-- ═══ BLOQUE 12: Punto 7 - Buscá acompañamiento ═══ -->
+      <div class="w-full text-left flex flex-col gap-4">
+        <h2
+          class="font-extrabold text-dorado text-lg sm:text-xl md:text-[1.35rem]"
+          style="font-family: 'Montserrat', sans-serif; color: #a6895c; font-weight: 800; line-height: 1.35; margin: 0;"
+        >
+          7. Buscá acompañamiento
+        </h2>
+
+        <p
+          class="text-white font-normal text-justify"
+          style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.75; text-align: justify; text-justify: inter-word; margin: 0;"
+        >
+          La violencia laboral suele generar aislamiento.
+        </p>
+
+        <p
+          class="text-white font-normal text-justify"
+          style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.75; text-align: justify; text-justify: inter-word; margin: 0;"
+        >
+          Hablar con personas de confianza, recibir orientación profesional o
+          participar en espacios colectivos puede ayudarte a enfrentar la
+          situación y evitar la revictimización.
+        </p>
+      </div>
+
+      <!-- ═══ LÍNEA DE SEPARACIÓN 12 ═══ -->
+      <div class="w-full my-1 sm:my-2" aria-hidden="true">
+        <div
+          class="w-full h-[2px] rounded-full"
+          style="background-color: #a6895c;"
+        >
+        </div>
+      </div>
+
+      <!-- ═══ BLOQUE 13: Tus derechos ═══ -->
+      <div class="w-full text-left flex flex-col gap-4">
+        <h2
+          class="font-extrabold text-dorado text-lg sm:text-xl md:text-[1.35rem]"
+          style="font-family: 'Montserrat', sans-serif; color: #a6895c; font-weight: 800; line-height: 1.35; margin: 0;"
+        >
+          Tus derechos
+        </h2>
+
+        <p
+          class="text-white font-normal text-justify"
+          style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.75; text-align: justify; text-justify: inter-word; margin: 0;"
+        >
+          La violencia y el acoso laboral constituyen una vulneración de
+          derechos humanos.
+        </p>
+
+        <p
+          class="text-white font-normal text-justify"
+          style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.75; text-align: justify; text-justify: inter-word; margin: 0;"
+        >
+          <strong class="font-bold text-white"
+            >El Convenio N.° 190 de la Organización Internacional del Trabajo
+            (OIT)</strong
+          > reconoce el derecho de todas las personas a un mundo del trabajo libre
+          de violencia y acoso.
+        </p>
+
+        <p
+          class="text-white font-normal text-justify"
+          style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.75; text-align: justify; text-justify: inter-word; margin: 0;"
+        >
+          Ello implica que los procedimientos destinados a investigar estos
+          hechos deben respetar garantías básicas, entre ellas:
+        </p>
+
+        <!-- Lista de viñetas: Garantías básicas -->
+        <ul class="flex flex-col gap-2.5 pl-1 sm:pl-2">
+          <li class="flex items-start gap-3">
+            <span
+              class="inline-block w-2.5 h-2.5 rounded-full mt-2 shrink-0"
+              style="background-color: #a6895c;"
+              aria-hidden="true"></span>
+            <span
+              class="text-white font-normal flex-1 text-left"
+              style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.6;"
+            >
+              el derecho a ser oídx;
+            </span>
+          </li>
+
+          <li class="flex items-start gap-3">
+            <span
+              class="inline-block w-2.5 h-2.5 rounded-full mt-2 shrink-0"
+              style="background-color: #a6895c;"
+              aria-hidden="true"></span>
+            <span
+              class="text-white font-normal flex-1 text-left"
+              style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.6;"
+            >
+              el derecho a aportar pruebas;
+            </span>
+          </li>
+
+          <li class="flex items-start gap-3">
+            <span
+              class="inline-block w-2.5 h-2.5 rounded-full mt-2 shrink-0"
+              style="background-color: #a6895c;"
+              aria-hidden="true"></span>
+            <span
+              class="text-white font-normal flex-1 text-left"
+              style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.6;"
+            >
+              el derecho a solicitar medidas de protección;
+            </span>
+          </li>
+
+          <li class="flex items-start gap-3">
+            <span
+              class="inline-block w-2.5 h-2.5 rounded-full mt-2 shrink-0"
+              style="background-color: #a6895c;"
+              aria-hidden="true"></span>
+            <span
+              class="text-white font-normal flex-1 text-left"
+              style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.6;"
+            >
+              el derecho a una investigación diligente, imparcial y dentro de un
+              plazo razonable;
+            </span>
+          </li>
+
+          <li class="flex items-start gap-3">
+            <span
+              class="inline-block w-2.5 h-2.5 rounded-full mt-2 shrink-0"
+              style="background-color: #a6895c;"
+              aria-hidden="true"></span>
+            <span
+              class="text-white font-normal flex-1 text-left"
+              style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.6;"
+            >
+              el derecho a recibir información sobre el trámite de las
+              actuaciones;
+            </span>
+          </li>
+
+          <li class="flex items-start gap-3">
+            <span
+              class="inline-block w-2.5 h-2.5 rounded-full mt-2 shrink-0"
+              style="background-color: #a6895c;"
+              aria-hidden="true"></span>
+            <span
+              class="text-white font-normal flex-1 text-left"
+              style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.6;"
+            >
+              la protección frente a represalias;
+            </span>
+          </li>
+
+          <li class="flex items-start gap-3">
+            <span
+              class="inline-block w-2.5 h-2.5 rounded-full mt-2 shrink-0"
+              style="background-color: #a6895c;"
+              aria-hidden="true"></span>
+            <span
+              class="text-white font-normal flex-1 text-left"
+              style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.6;"
+            >
+              el respeto por la confidencialidad y la dignidad de las personas
+              involucradas.
+            </span>
+          </li>
+        </ul>
+        <p
+          class="text-white font-normal text-justify"
+          style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.75; text-align: justify; text-justify: inter-word; margin: 0;"
+        >
+          Cuando estos derechos no son garantizados, también puede configurarse
+          violencia institucional.
+        </p>
+      </div>
+
+      <!-- ═══ LÍNEA DE SEPARACIÓN 13 ═══ -->
+      <div class="w-full my-1 sm:my-2" aria-hidden="true">
+        <div
+          class="w-full h-[2px] rounded-full"
+          style="background-color: #a6895c;"
+        >
+        </div>
+      </div>
+
+      <!-- ═══ BLOQUE 14: La Comisión puede acompañarte ═══ -->
+      <div class="w-full text-left flex flex-col gap-4">
+        <h2
+          class="font-extrabold text-dorado text-lg sm:text-xl md:text-[1.35rem]"
+          style="font-family: 'Montserrat', sans-serif; color: #a6895c; font-weight: 800; line-height: 1.35; margin: 0;"
+        >
+          La Comisión puede acompañarte
+        </h2>
+
+        <p
+          class="text-white font-normal text-justify"
+          style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.75; text-align: justify; text-justify: inter-word; margin: 0;"
+        >
+          Si necesitás orientación o querés compartir tu situación, podés
+          comunicarte con la Comisión.
+        </p>
+
+        <p
+          class="text-white font-normal text-justify"
+          style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-size: clamp(0.95rem, 1.2vw, 1.15rem); line-height: 1.75; text-align: justify; text-justify: inter-word; margin: 0;"
+        >
+          Nuestro objetivo es acompañar a las víctimas, brindar información útil
+          y contribuir a la construcción de ambientes laborales libres de
+          violencia y acoso.
+        </p>
+      </div>
+
+      <!-- ═══ LÍNEA DE SEPARACIÓN 14 (Final) ═══ -->
+      <div class="w-full my-1 sm:my-2" aria-hidden="true">
+        <div
+          class="w-full h-[2px] rounded-full"
+          style="background-color: #a6895c;"
+        >
+        </div>
+      </div>
+      <div class="w-full text-center">
+        <div class="inline-block border-b-2 border-dorado pb-1.5 text-center">
+          <h1
+            class="font-black text-dorado uppercase tracking-wide text-center"
+            style="font-family: 'Montserrat', sans-serif; color: #a6895c; font-size: clamp(1.65rem, 2.5vw, 2.5rem); line-height: 1.15; font-weight: 900; margin: 0;"
+          >
+            Herramientas
+          </h1>
+        </div>
+      </div>
+
+      <!-- ═══ LISTADO DE HERRAMIENTAS CLICKEABLES ═══ -->
+      <div
+        class="w-full mt-3 sm:mt-5 flex flex-col gap-3"
+        aria-label="Listado de herramientas"
+      >
+        {
+          herramientas.map((item) => (
+            <div
+              role="button"
+              tabindex="0"
+              class="herramienta-item group"
+              data-open-herramienta={item.id}
+              aria-haspopup="dialog"
+              aria-label={`Abrir ${item.titulo}`}
+            >
+              <!-- Icono de documento cuadrado con bordes dorados -->
+              <div class="herramienta-icon-box">
+                <svg
+                  class="herramienta-icon-svg"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.8"
+                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                  />
+                </svg>
+              </div>
+
+              <!-- Subtítulo dorado y título -->
+              <div class="herramienta-text-box">
+                <span class="herramienta-categoria">
+                  {item.categoria}
+                </span>
+                <span class="herramienta-titulo">
+                  {item.titulo}
+                </span>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+
+    <!-- ═══ MODAL REUTILIZABLE UNIVERSAL ═══ -->
+    <ModalHerramienta />
+  </main>
+</Layout>
+
+<style>
+  /* ── Estilos explícitos para el listado de herramientas ── */
+  .herramienta-item {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    cursor: pointer;
+    user-select: none;
+    width: fit-content;
+    max-width: 100%;
+    text-align: left;
+    padding: 0.5rem 0.25rem;
+    transition: opacity 0.2s ease;
+  }
+
+  .herramienta-item:focus-visible {
+    outline: 2px solid #a6895c;
+    outline-offset: 4px;
+    border-radius: 0.5rem;
+  }
+
+  .herramienta-icon-box {
+    width: 3rem;
+    height: 3rem;
+    min-width: 3rem;
+    max-width: 3rem;
+    min-height: 3rem;
+    max-height: 3rem;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.75rem;
+    border: 1.5px solid rgba(166, 137, 92, 0.65);
+    background-color: rgba(0, 0, 0, 0.28);
+    transition: all 0.2s ease;
+    box-sizing: border-box;
+  }
+
+  .herramienta-item:hover .herramienta-icon-box {
+    border-color: #a6895c;
+    background-color: rgba(0, 0, 0, 0.45);
+    transform: scale(1.05);
+  }
+
+  .herramienta-icon-svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    min-width: 1.5rem;
+    min-height: 1.5rem;
+    color: #a6895c;
+    flex-shrink: 0;
+  }
+
+  .herramienta-text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    text-align: left;
+  }
+
+  .herramienta-categoria {
+    color: #a6895c;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    line-height: 1.2;
+  }
+
+  .herramienta-titulo {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(1rem, 1.25vw, 1.25rem);
+    font-weight: 800;
+    line-height: 1.3;
+    transition: color 0.2s ease;
+  }
+
+  .herramienta-item:hover .herramienta-titulo {
+    color: #a6895c;
+  }
+</style>
