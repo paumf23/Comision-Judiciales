@@ -9,7 +9,7 @@ const { herramientasData = herramientas } = Astro.props;
 ---
 
 <!-- ═══════════════════════════════════════════════════════════════════════════ -->
-<!-- ═══ MODAL REUTILIZABLE UNIVERSAL PARA HERRAMIENTAS Y MODELOS ═══ -->
+<!-- ═══ MODAL REUTILIZABLE UNIVERSAL CON VISOR DE PDF EMBEBIDO (IFRAME) ═══ -->
 <!-- ═══════════════════════════════════════════════════════════════════════════ -->
 <dialog
   id="modal-herramienta-universal"
@@ -28,129 +28,84 @@ const { herramientasData = herramientas } = Astro.props;
   </button>
 
   <div class="modal-dialog-inner">
-    <!-- ── Cuerpo del Modal con scroll y contenido inyectado dinámicamente ── -->
-    <div class="modal-dialog-body" id="modal-scroll-body">
-      <!-- ── Encabezado del documento (se desplaza hacia arriba con el scroll para lectura limpia) ── -->
-      <div
-        id="modal-header-scroll"
-        class="px-4 sm:px-7 py-3.5 sm:py-5 bg-[#07192b] border-b border-dorado/30 flex flex-col sm:flex-row sm:items-center justify-between gap-3 sm:gap-4 pr-12 sm:pr-16"
-      >
-        <!-- Título y categoría arriba con ancho completo -->
-        <div class="flex items-start sm:items-center gap-2.5 sm:gap-3 text-left w-full sm:flex-1 min-w-0">
-          <span class="w-2.5 h-6 sm:h-7 bg-dorado rounded-full shrink-0 mt-0.5 sm:mt-0"></span>
-          <div class="flex-1 min-w-0">
-            <span
-              id="modal-doc-categoria"
-              class="text-dorado text-[0.68rem] sm:text-xs uppercase tracking-wider font-bold block mb-0.5 sm:mb-1"
-            >
-              Herramienta Legal • Plantilla
-            </span>
-            <h3
-              id="dialog-title-universal"
-              class="text-white text-sm sm:text-base md:text-lg font-black uppercase tracking-wide leading-snug break-words"
-            >
-              Documento
-            </h3>
-          </div>
-        </div>
-
-        <!-- Botones debajo del título en móviles, o a la derecha en pantallas grandes -->
-        <div class="flex items-center gap-2 sm:gap-3 shrink-0 w-full sm:w-auto pt-0.5 sm:pt-0">
-          <!-- Botón Copiar -->
-          <button
-            type="button"
-            id="btn-copiar-universal"
-            class="btn-herramienta-action text-xs sm:text-sm flex-1 sm:flex-none justify-center"
-            title="Copiar texto completo al portapapeles"
-          >
-            <svg
-              style="width: 1rem; height: 1rem; max-width: 1rem; max-height: 1rem;"
-              class="shrink-0"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"
-              ></path>
-            </svg>
-            <span class="btn-copy-label">Copiar</span>
-          </button>
-
-          <!-- Botón Descargar -->
-          <button
-            type="button"
-            id="btn-descargar-universal"
-            class="btn-herramienta-action text-xs sm:text-sm flex-1 sm:flex-none justify-center"
-            title="Descargar documento editable (.doc)"
-          >
-            <svg
-              style="width: 1rem; height: 1rem; max-width: 1rem; max-height: 1rem;"
-              class="shrink-0"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
-              ></path>
-            </svg>
-            <span>Descargar</span>
-          </button>
-        </div>
-      </div>
-
-      <!-- Contenedor del documento -->
-      <div
-        id="modal-contenedor-contenido"
-        class="max-w-4xl mx-auto space-y-5 text-white/95 text-sm sm:text-base leading-relaxed p-6 sm:p-8"
-        style="text-align: justify;"
-      >
-        <!-- Aquí se inyecta el contenido de la herramienta clickeada -->
-      </div>
-    </div>
-
-    <!-- ── Footer fijo del Modal (limpio y adaptativo para móvil y escritorio) ── -->
+    <!-- ── Encabezado del documento ── -->
     <div
-      class="px-4 sm:px-7 py-2.5 sm:py-3.5 bg-[#07192b] border-t border-dorado/30 flex flex-col sm:flex-row items-center justify-between gap-2.5 sm:gap-3 shrink-0"
+      id="modal-header-scroll"
+      class="px-4 sm:px-7 py-3 sm:py-4 bg-[#07192b] border-b border-dorado/30 flex flex-col sm:flex-row sm:items-center justify-between gap-3 sm:gap-4 pr-12 sm:pr-16 shrink-0"
     >
-      <div class="flex items-center justify-center gap-2 sm:gap-2.5 w-full sm:w-auto order-1 sm:order-2">
+      <!-- Título y categoría arriba con ancho completo -->
+      <div class="flex items-start sm:items-center gap-2.5 sm:gap-3 text-left w-full sm:flex-1 min-w-0">
+        <span class="w-2.5 h-6 sm:h-7 bg-dorado rounded-full shrink-0 mt-0.5 sm:mt-0"></span>
+        <div class="flex-1 min-w-0">
+          <span
+            id="modal-doc-categoria"
+            class="text-dorado text-[0.68rem] sm:text-xs uppercase tracking-wider font-bold block mb-0.5 sm:mb-1"
+          >
+            Herramienta Legal • Documento
+          </span>
+          <h3
+            id="dialog-title-universal"
+            class="text-white text-sm sm:text-base md:text-lg font-black uppercase tracking-wide leading-snug break-words"
+          >
+            Documento
+          </h3>
+        </div>
+      </div>
+
+      <!-- Botón Descargar PDF en el encabezado -->
+      <div class="flex items-center gap-2 sm:gap-3 shrink-0 w-full sm:w-auto pt-0.5 sm:pt-0">
         <button
           type="button"
-          id="btn-copiar-universal-footer"
-          class="btn-herramienta-action text-xs flex-1 sm:flex-none justify-center"
-          style="padding: 0.4rem 0.75rem;"
+          id="btn-descargar-universal"
+          class="btn-herramienta-action text-xs sm:text-sm flex-1 sm:flex-none justify-center"
+          title="Descargar documento en formato PDF"
         >
           <svg
-            style="width: 0.9rem; height: 0.9rem; max-width: 0.9rem; max-height: 0.9rem;"
+            style="width: 1rem; height: 1rem; max-width: 1rem; max-height: 1rem;"
             class="shrink-0"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
+            aria-hidden="true"
           >
             <path
               stroke-linecap="round"
               stroke-linejoin="round"
               stroke-width="2"
-              d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"
+              d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
             ></path>
           </svg>
-          <span class="btn-copy-label">Copiar texto</span>
+          <span>Descargar PDF</span>
         </button>
+      </div>
+    </div>
 
+    <!-- ── Cuerpo del Modal: Visor PDF vía <iframe> ── -->
+    <div class="modal-dialog-body" id="modal-iframe-container">
+      <iframe
+        id="modal-pdf-iframe"
+        src="about:blank"
+        title="Visualizador de documento PDF"
+        class="modal-pdf-iframe"
+        loading="lazy"
+      ></iframe>
+    </div>
+
+    <!-- ── Footer fijo del Modal ── -->
+    <div
+      class="px-4 sm:px-7 py-2.5 sm:py-3.5 bg-[#07192b] border-t border-dorado/30 flex flex-col sm:flex-row items-center justify-between gap-2.5 sm:gap-3 shrink-0"
+    >
+      <p class="text-[0.68rem] sm:text-xs text-white/60 italic m-0 text-center sm:text-left order-2 sm:order-1 max-w-sm sm:max-w-md leading-tight sm:leading-normal">
+        * Documento orientativo para formular presentaciones en el ámbito laboral judicial.
+      </p>
+
+      <div class="flex items-center justify-center gap-2 sm:gap-2.5 w-full sm:w-auto order-1 sm:order-2">
         <button
           type="button"
           id="btn-descargar-universal-footer"
           class="btn-herramienta-action text-xs flex-1 sm:flex-none justify-center"
           style="padding: 0.4rem 0.75rem;"
+          title="Descargar documento en formato PDF"
         >
           <svg
             style="width: 0.9rem; height: 0.9rem; max-width: 0.9rem; max-height: 0.9rem;"
@@ -166,13 +121,9 @@ const { herramientasData = herramientas } = Astro.props;
               d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
             ></path>
           </svg>
-          <span>Descargar (.doc)</span>
+          <span>Descargar PDF</span>
         </button>
       </div>
-
-      <p class="text-[0.68rem] sm:text-xs text-white/60 italic m-0 text-center sm:text-left order-2 sm:order-1 max-w-sm sm:max-w-md leading-tight sm:leading-normal">
-        * Modelo orientativo para formular presentaciones en el ámbito laboral judicial.
-      </p>
     </div>
   </div>
 </dialog>
@@ -188,10 +139,10 @@ const { herramientasData = herramientas } = Astro.props;
     color: #ffffff;
     border-radius: 1.25rem;
     padding: 0;
-    max-width: 54rem;
-    width: min(92vw, 54rem);
-    height: 85vh;
-    max-height: 85vh;
+    max-width: 58rem;
+    width: min(94vw, 58rem);
+    height: 88vh;
+    max-height: 88vh;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.85);
     overflow: hidden;
   }
@@ -300,62 +251,25 @@ const { herramientasData = herramientas } = Astro.props;
     transform: scale(1.05);
   }
 
-  /* ── Barra lateral de scroll siempre visible y dorada ── */
+  /* ── Contenedor del Visor PDF (Iframe) ── */
   .modal-dialog-body {
     flex: 1 1 auto;
     min-height: 0;
-    overflow-y: scroll;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
     padding: 0;
-    scrollbar-width: thin;
-    scrollbar-color: #a6895c rgba(255, 255, 255, 0.15);
+    margin: 0;
+    background-color: #2b2e33;
+    position: relative;
   }
 
-  .modal-dialog-body::-webkit-scrollbar {
-    width: 10px;
-  }
-
-  .modal-dialog-body::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, 0.08);
-    border-radius: 6px;
-    margin: 4px;
-  }
-
-  .modal-dialog-body::-webkit-scrollbar-thumb {
-    background: #a6895c;
-    border-radius: 6px;
-    border: 2px solid #0c243e;
-  }
-
-  .modal-dialog-body::-webkit-scrollbar-thumb:hover {
-    background: #bfaa7a;
-  }
-
-  /* ── Estilos para listas de verificación y casillas para tildar ── */
-  :global(.checklist) {
-    list-style: none;
-    padding-left: 0.25rem;
-    margin: 0.75rem 0;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
-  :global(.checklist-item) {
-    display: flex;
-    align-items: flex-start;
-    gap: 0.65rem;
-    line-height: 1.45;
-  }
-
-  :global(.check-box) {
-    display: inline-block;
-    width: 1.15rem;
-    height: 1.15rem;
-    border: 1.5px solid #a6895c;
-    border-radius: 3px;
-    background: rgba(0, 0, 0, 0.25);
-    flex-shrink: 0;
-    margin-top: 0.2rem;
+  .modal-pdf-iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+    background-color: #ffffff;
   }
 </style>
 
@@ -397,16 +311,18 @@ const { herramientasData = herramientas } = Astro.props;
       const modal = document.getElementById('modal-herramienta-universal');
       const catEl = document.getElementById('modal-doc-categoria');
       const titleEl = document.getElementById('dialog-title-universal');
-      const contEl = document.getElementById('modal-contenedor-contenido');
-      const scrollBody = document.getElementById('modal-scroll-body');
+      const iframeEl = document.getElementById('modal-pdf-iframe');
 
       if (catEl) catEl.textContent = data.categoria;
       if (titleEl) titleEl.textContent = data.titulo;
-      if (contEl) contEl.innerHTML = data.contenidoHtml;
+
+      if (iframeEl && data.pdfUrl) {
+        // Carga directa del PDF en el iframe
+        iframeEl.src = data.pdfUrl;
+      }
 
       if (modal && typeof modal.showModal === 'function') {
         modal.showModal();
-        if (scrollBody) scrollBody.scrollTop = 0;
         // Evitamos que el foco del navegador mueva la página hacia arriba
         window.scrollTo({ top: savedScrollY, behavior: 'instant' });
       }
@@ -414,69 +330,26 @@ const { herramientasData = herramientas } = Astro.props;
 
     function cerrarModal() {
       const modal = document.getElementById('modal-herramienta-universal');
+      const iframeEl = document.getElementById('modal-pdf-iframe');
       if (modal && typeof modal.close === 'function') {
         modal.close();
+      }
+      if (iframeEl) {
+        // Liberamos el iframe para que no siga consumiendo memoria en background
+        iframeEl.src = 'about:blank';
       }
       window.scrollTo({ top: savedScrollY, behavior: 'instant' });
     }
 
-    async function copiarTextoActivo(buttonElement) {
-      if (!activeHerramienta || !activeHerramienta.textoPlano) return;
-      try {
-        await navigator.clipboard.writeText(activeHerramienta.textoPlano);
-        const originalHTML = buttonElement.innerHTML;
-        buttonElement.innerHTML = `
-          <svg style="width: 1rem; height: 1rem; max-width: 1rem; max-height: 1rem;" class="text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
-          </svg>
-          <span class="text-emerald-300 font-bold">¡Copiado!</span>
-        `;
-        setTimeout(() => {
-          buttonElement.innerHTML = originalHTML;
-        }, 2500);
-      } catch (err) {
-        console.error('Error al copiar al portapapeles:', err);
-      }
-    }
+    function descargarPdfActivo() {
+      if (!activeHerramienta || !activeHerramienta.pdfUrl) return;
 
-    function descargarDocActivo() {
-      if (!activeHerramienta) return;
-      const htmlWord = `<!DOCTYPE html>
-<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40">
-<head>
-<meta charset="utf-8">
-<title>${activeHerramienta.titulo}</title>
-<style>
-  body { font-family: 'Calibri', 'Arial', sans-serif; font-size: 11pt; line-height: 1.5; color: #111; margin: 3cm 2.5cm 2.5cm 3cm; text-align: justify; }
-  h1 { font-size: 13pt; font-weight: bold; text-align: center; margin-bottom: 24pt; text-transform: uppercase; }
-  h2 { font-size: 11pt; font-weight: bold; margin-top: 18pt; margin-bottom: 6pt; text-transform: uppercase; }
-  h3 { font-size: 11pt; font-weight: bold; margin-top: 12pt; margin-bottom: 4pt; }
-  p { text-align: justify; margin-bottom: 8pt; margin-top: 0; }
-  ul { margin-top: 4pt; margin-bottom: 8pt; padding-left: 20pt; }
-  li { margin-bottom: 3pt; }
-  hr { border: none; border-top: 1px solid #777; margin: 12pt 0; }
-  .header-dest { font-weight: bold; margin-bottom: 4pt; }
-  .header-sub { font-family: monospace; letter-spacing: 2px; margin-bottom: 20pt; }
-  .italic { font-style: italic; }
-</style>
-</head>
-<body>
-  <h1>${activeHerramienta.titulo}</h1>
-  ${activeHerramienta.contenidoHtml}
-</body>
-</html>`;
-
-      const blob = new Blob(['\ufeff' + htmlWord], {
-        type: 'application/msword;charset=utf-8',
-      });
-      const url = URL.createObjectURL(blob);
       const a = document.createElement('a');
-      a.href = url;
-      a.download = activeHerramienta.nombreArchivo || 'documento.doc';
+      a.href = activeHerramienta.pdfUrl;
+      a.download = activeHerramienta.nombreArchivo || `${activeHerramienta.id}.pdf`;
       document.body.appendChild(a);
       a.click();
       document.body.removeChild(a);
-      URL.revokeObjectURL(url);
     }
 
     function initModalUniversal() {
@@ -515,28 +388,18 @@ const { herramientasData = herramientas } = Astro.props;
           }
         });
         modal.addEventListener('close', () => {
-          window.scrollTo({ top: savedScrollY, behavior: 'instant' });
+          cerrarModal();
         });
       }
 
-      // Botones de copiar
-      const btnCopiar = document.getElementById('btn-copiar-universal');
-      if (btnCopiar) {
-        btnCopiar.addEventListener('click', () => copiarTextoActivo(btnCopiar));
-      }
-      const btnCopiarFooter = document.getElementById('btn-copiar-universal-footer');
-      if (btnCopiarFooter) {
-        btnCopiarFooter.addEventListener('click', () => copiarTextoActivo(btnCopiarFooter));
-      }
-
-      // Botones de descargar
+      // Botones de descargar PDF
       const btnDescargar = document.getElementById('btn-descargar-universal');
       if (btnDescargar) {
-        btnDescargar.addEventListener('click', descargarDocActivo);
+        btnDescargar.addEventListener('click', descargarPdfActivo);
       }
       const btnDescargarFooter = document.getElementById('btn-descargar-universal-footer');
       if (btnDescargarFooter) {
-        btnDescargarFooter.addEventListener('click', descargarDocActivo);
+        btnDescargarFooter.addEventListener('click', descargarPdfActivo);
       }
     }
 

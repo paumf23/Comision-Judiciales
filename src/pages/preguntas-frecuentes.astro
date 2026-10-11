@@ -193,10 +193,10 @@ const faqs: FAQ[] = [
             </summary>
 
             <!-- Contenido / Respuesta desplegable con fondo azul más oscuro (#051630) y texto blanco -->
-            <div class="faq-answer-container">
-              <div class="space-y-3.5 text-base sm:text-lg leading-relaxed text-left text-white/95">
+            <div class="faq-answer-container" lang="es">
+              <div class="space-y-3.5 text-base sm:text-lg leading-relaxed text-justify hyphens-auto [text-align-last:left] [text-justify:inter-word] text-white/95">
                 {faq.parrafos.map((parrafo) => (
-                  <p class="m-0 text-white/95 font-normal">
+                  <p class="m-0 text-white/95 font-normal text-justify hyphens-auto [text-align-last:left]">
                     {parrafo}
                   </p>
                 ))}
@@ -312,6 +312,11 @@ const faqs: FAQ[] = [
     border-top: 1px solid rgba(255, 255, 255, 0.12);
     background-color: #051630 !important;
     color: #ffffff;
+    text-align: justify;
+    text-justify: inter-word;
+    text-align-last: left;
+    hyphens: auto;
+    -webkit-hyphens: auto;
   }
 
   @media (min-width: 640px) {
