@@ -1,0 +1,1229 @@
+{
+  "titulo": "Sistematización de la Normativa sobre Violencia de Género",
+  "fuente": "LEGISALUD ARGENTINA - Ministerio de Salud de la Nación",
+  "url_origen": "http://leg.msal.gov.ar/atlas/violencia_genero.html",
+  "total_jurisdicciones": 25,
+  "total_normas": 170,
+  "jurisdicciones": [
+    {
+      "id": 0,
+      "slug": "nacional",
+      "jurisdiccion": "Nacional",
+      "total_normas": 16,
+      "normas": [
+        {
+          "titulo": "Ley 23179. Convención sobre eliminación de todas las formas de discriminación contra la mujer.",
+          "tipo_numero": "Ley 23179",
+          "descripcion": "Convención sobre eliminación de todas las formas de discriminación contra la mujer.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/6452.pdf"
+        },
+        {
+          "titulo": "Ley 24632. Convención interamericana para prevenir, sancionar y erradicar la violencia contra la mujer.",
+          "tipo_numero": "Ley 24632",
+          "descripcion": "Convención interamericana para prevenir, sancionar y erradicar la violencia contra la mujer.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/6303.pdf"
+        },
+        {
+          "titulo": "Ley 26171. Protocolo Facultativo de la Convención sobre Eliminación de Todas las Formas de Discriminación contra la Mujer.",
+          "tipo_numero": "Ley 26171",
+          "descripcion": "Protocolo Facultativo de la Convención sobre Eliminación de Todas las Formas de Discriminación contra la Mujer.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/6573.pdf"
+        },
+        {
+          "titulo": "Ley 26485. Ley de protección integral para prevenir, sancionar y erradicar la violencia contra las mujeres.",
+          "tipo_numero": "Ley 26485",
+          "descripcion": "Ley de protección integral para prevenir, sancionar y erradicar la violencia contra las mujeres.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/13231.pdf"
+        },
+        {
+          "titulo": "Ley 26486. Enmienda a la Convención sobre Eliminación de Todas las Formas de Discriminación contra la Mujer.",
+          "tipo_numero": "Ley 26486",
+          "descripcion": "Enmienda a la Convención sobre Eliminación de Todas las Formas de Discriminación contra la Mujer.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/13232.pdf"
+        },
+        {
+          "titulo": "Ley 27039. Fondo Especial de Difusión de la Lucha contra la Violencia de Género.",
+          "tipo_numero": "Ley 27039",
+          "descripcion": "Fondo Especial de Difusión de la Lucha contra la Violencia de Género.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/24072.pdf"
+        },
+        {
+          "titulo": "Ley 27176. Día Nacional de la Lucha contra la Violencia de Género en los Medios de Comunicación.",
+          "tipo_numero": "Ley 27176",
+          "descripcion": "Día Nacional de la Lucha contra la Violencia de Género en los Medios de Comunicación.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/25852.pdf"
+        },
+        {
+          "titulo": "Ley 27210. Cuerpo de Abogadas y Abogados para Víctimas de Violencia de Género.",
+          "tipo_numero": "Ley 27210",
+          "descripcion": "Cuerpo de Abogadas y Abogados para Víctimas de Violencia de Género.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/26202.pdf"
+        },
+        {
+          "titulo": "Ley 27410. Concientización sobre la Violencia de Género.",
+          "tipo_numero": "Ley 27410",
+          "descripcion": "Concientización sobre la Violencia de Género.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/29710.pdf"
+        },
+        {
+          "titulo": "Ley 27499. Ley Micaela de Capacitación Obligatoria en Género para todas las Personas que integran los tres poderes del Estado.",
+          "tipo_numero": "Ley 27499",
+          "descripcion": "Ley Micaela de Capacitación Obligatoria en Género para todas las Personas que integran los tres poderes del Estado.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/32659.pdf"
+        },
+        {
+          "titulo": "Ley 27501. Modificación de la ley 26485.",
+          "tipo_numero": "Ley 27501",
+          "descripcion": "Modificación de la ley 26485.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/33399.pdf"
+        },
+        {
+          "titulo": "Ley 27533. Modificación de la ley 26485.",
+          "tipo_numero": "Ley 27533",
+          "descripcion": "Modificación de la ley 26485.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/34581.pdf"
+        },
+        {
+          "titulo": "Ley 27696. Abordaje integral de personas víctimas de violencia de género.",
+          "tipo_numero": "Ley 27696",
+          "descripcion": "Abordaje integral de personas víctimas de violencia de género.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/legisalud/migration/pdf/ley27696.pdf"
+        },
+        {
+          "titulo": "Decreto 1011/2010. Reglamentación de la ley 26485.",
+          "tipo_numero": "Decreto 1011/2010",
+          "descripcion": "Reglamentación de la ley 26485.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/19334.pdf"
+        },
+        {
+          "titulo": "Decreto 744/2021. Cuerpo de Abogadas y Abogados para Víctimas de Violencia de Género.",
+          "tipo_numero": "Decreto 744/2021",
+          "descripcion": "Cuerpo de Abogadas y Abogados para Víctimas de Violencia de Género.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/legisalud/migration/pdf/dec744_2021.pdf"
+        },
+        {
+          "titulo": "Decreto 409/2023. Reglamentación de la ley 27696.",
+          "tipo_numero": "Decreto 409/2023",
+          "descripcion": "Reglamentación de la ley 27696.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/legisalud/migration/pdf/dec409_2023.pdf"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "slug": "ciudad-autonoma-de-buenos-aires",
+      "jurisdiccion": "Ciudad Autónoma de Buenos Aires",
+      "total_normas": 11,
+      "normas": [
+        {
+          "titulo": "Ley 1688. Ley de prevención y asistencia a las víctimas de violencia familiar y doméstica.",
+          "tipo_numero": "Ley 1688",
+          "descripcion": "Ley de prevención y asistencia a las víctimas de violencia familiar y doméstica.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/10392.pdf"
+        },
+        {
+          "titulo": "Ley 3062. Identidad de Género.",
+          "tipo_numero": "Ley 3062",
+          "descripcion": "Identidad de Género.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/legisalud/migration/pdf/cabaley3062.pdf"
+        },
+        {
+          "titulo": "Ley 4203. Protección integral para prevenir, sancionar y erradicar la violencia contra las mujeres. Adhiere a la ley 26485.",
+          "tipo_numero": "Ley 4203",
+          "descripcion": "Protección integral para prevenir, sancionar y erradicar la violencia contra las mujeres. Adhiere a la ley 26485.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/20070.pdf"
+        },
+        {
+          "titulo": "Ley 5159. Día de la Eliminación de la Violencia Contra la mujer.",
+          "tipo_numero": "Ley 5159",
+          "descripcion": "Día de la Eliminación de la Violencia Contra la mujer.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/legisalud/migration/pdf/cabaley5159.pdf"
+        },
+        {
+          "titulo": "Ley 6027. Promoción y resguardo de espacios libres de discriminación y/o violencia por cuestiones de género, identidad de género u orientación sexual y acoso u hostigamiento escolar.",
+          "tipo_numero": "Ley 6027",
+          "descripcion": "Promoción y resguardo de espacios libres de discriminación y/o violencia por cuestiones de género, identidad de género u orientación sexual y acoso u hostigamiento escolar.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/32513.pdf"
+        },
+        {
+          "titulo": "Ley 6208. Ley Micaela. Adhiere a la ley 27499.",
+          "tipo_numero": "Ley 6208",
+          "descripcion": "Ley Micaela. Adhiere a la ley 27499.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/34299.pdf"
+        },
+        {
+          "titulo": "Ley 6120. Mes Nacional de Concientización sobre la Violencia de Género. Adhiere a la ley 27410.",
+          "tipo_numero": "Ley 6120",
+          "descripcion": "Mes Nacional de Concientización sobre la Violencia de Género. Adhiere a la ley 27410.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/legisalud/migration/pdf/cabaley6120.pdf"
+        },
+        {
+          "titulo": "Decreto 2423/2000. Programa de Acción Coordinada para la Promoción de la Mujer, Asistencia de la Problemática de la Violencia Familiar y el Maltrato Infantil.",
+          "tipo_numero": "Decreto 2423/2000",
+          "descripcion": "Programa de Acción Coordinada para la Promoción de la Mujer, Asistencia de la Problemática de la Violencia Familiar y el Maltrato Infantil.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/10560.pdf"
+        },
+        {
+          "titulo": "Decreto 2122/2003. Fortalecimiento de los Derechos de las Mujeres y para la Prevención y Asistencia Integral de la Problemática de la Violencia Familiar.",
+          "tipo_numero": "Decreto 2122/2003",
+          "descripcion": "Fortalecimiento de los Derechos de las Mujeres y para la Prevención y Asistencia Integral de la Problemática de la Violencia Familiar.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/10525.pdf"
+        },
+        {
+          "titulo": "Decreto 1983/2006. Sistema Unico de Prevención, Asistencia y Derivación contra la violencia intrafamiliar, doméstica y sexual.",
+          "tipo_numero": "Decreto 1983/2006",
+          "descripcion": "Sistema Unico de Prevención, Asistencia y Derivación contra la violencia intrafamiliar, doméstica y sexual.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/10487.pdf"
+        },
+        {
+          "titulo": "Resolución Conjunta 1/2019. Protocolo de Actuación para la Prevención, Abordaje y Erradicación de la Violencia de Género en el ámbito laboral.",
+          "tipo_numero": "Resolución Conjunta 1/2019",
+          "descripcion": "Protocolo de Actuación para la Prevención, Abordaje y Erradicación de la Violencia de Género en el ámbito laboral.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/33752.pdf"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "slug": "buenos-aires",
+      "jurisdiccion": "Buenos Aires",
+      "total_normas": 10,
+      "normas": [
+        {
+          "titulo": "Ley 12569. Ley de protección contra la violencia familiar.",
+          "tipo_numero": "Ley 12569",
+          "descripcion": "Ley de protección contra la violencia familiar.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/8556.pdf"
+        },
+        {
+          "titulo": "Ley 14509. Modificación de la ley 12569.",
+          "tipo_numero": "Ley 14509",
+          "descripcion": "Modificación de la ley 12569.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/21528.pdf"
+        },
+        {
+          "titulo": "Ley 14522. Día Provincial contra la Discriminación por Orientación Sexual e Identidad de Género.",
+          "tipo_numero": "Ley 14522",
+          "descripcion": "Día Provincial contra la Discriminación por Orientación Sexual e Identidad de Género.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/legisalud/migration/pdf/bsasley14522.pdf"
+        },
+        {
+          "titulo": "Ley 14603. Registro Unico de Casos de Violencia de Género.",
+          "tipo_numero": "Ley 14603",
+          "descripcion": "Registro Unico de Casos de Violencia de Género.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/23748.pdf"
+        },
+        {
+          "titulo": "Ley 14772. Programa NiUnaMenos de erradicación de las violencias contra las mujeres.",
+          "tipo_numero": "Ley 14772",
+          "descripcion": "Programa NiUnaMenos de erradicación de las violencias contra las mujeres.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/26742.pdf"
+        },
+        {
+          "titulo": "Ley 14862. Día Nacional de la Lucha contra la Violencia de Género en los Medios de Comunicación. Adhiere a la ley 27176.",
+          "tipo_numero": "Ley 14862",
+          "descripcion": "Día Nacional de la Lucha contra la Violencia de Género en los Medios de Comunicación. Adhiere a la ley 27176.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/28252.pdf"
+        },
+        {
+          "titulo": "Ley 15189. Obligatoriedad de capacitación en la temática de género y violencia contra las mujeres.",
+          "tipo_numero": "Ley 15189",
+          "descripcion": "Obligatoriedad de capacitación en la temática de género y violencia contra las mujeres.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/legisalud/migration/pdf/bsasley15189.pdf"
+        },
+        {
+          "titulo": "Decreto 2875/2005. Reglamentación de la ley 12569.",
+          "tipo_numero": "Decreto 2875/2005",
+          "descripcion": "Reglamentación de la ley 12569.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/7875.pdf"
+        },
+        {
+          "titulo": "Decreto 459/2017. Reglamentación de la ley 14603.",
+          "tipo_numero": "Decreto 459/2017",
+          "descripcion": "Reglamentación de la ley 14603.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/29488.pdf"
+        },
+        {
+          "titulo": "Decreto 121/2020. Reglamentación de la ley 14893.",
+          "tipo_numero": "Decreto 121/2020",
+          "descripcion": "Reglamentación de la ley 14893.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/35018.pdf"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "slug": "catamarca",
+      "jurisdiccion": "Catamarca",
+      "total_normas": 4,
+      "normas": [
+        {
+          "titulo": "Ley 5363. Protección Integral para Prevenir, Sancionar y Erradicar la violencia contra las mujeres. Adhiere al decreto 1011/2010.",
+          "tipo_numero": "Ley 5363",
+          "descripcion": "Protección Integral para Prevenir, Sancionar y Erradicar la violencia contra las mujeres. Adhiere al decreto 1011/2010.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/20407.pdf"
+        },
+        {
+          "titulo": "Ley 5576. Regulanse las situaciones de violencia que se originan en los ámbitos de salud públicos y privados.",
+          "tipo_numero": "Ley 5576",
+          "descripcion": "Regulanse las situaciones de violencia que se originan en los ámbitos de salud públicos y privados.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/32904.pdf"
+        },
+        {
+          "titulo": "Ley 5602. Ley Micaela. Adhiere a la ley 27449.",
+          "tipo_numero": "Ley 5602",
+          "descripcion": "Ley Micaela. Adhiere a la ley 27449.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/34303.pdf"
+        },
+        {
+          "titulo": "Ley 5692. Programa Provincial de Promotoras y Promotores Territoriales de Género y Diversidad Micaela García.",
+          "tipo_numero": "Ley 5692",
+          "descripcion": "Programa Provincial de Promotoras y Promotores Territoriales de Género y Diversidad Micaela García.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/legisalud/migration/pdf/catley5692.pdf"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "slug": "chaco",
+      "jurisdiccion": "Chaco",
+      "total_normas": 13,
+      "normas": [
+        {
+          "titulo": "Ley 5492. Convención interamericana para prevenir, sancionar y erradicar la violencia contra la mujer. Adhiere a la ley 24632.",
+          "tipo_numero": "Ley 5492",
+          "descripcion": "Convención interamericana para prevenir, sancionar y erradicar la violencia contra la mujer. Adhiere a la ley 24632.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/26767.pdf"
+        },
+        {
+          "titulo": "Ley 6521. Protocolo de Detección Sistemática de Situaciones de Violencia contra la Mujer en la Consulta Médica.",
+          "tipo_numero": "Ley 6521",
+          "descripcion": "Protocolo de Detección Sistemática de Situaciones de Violencia contra la Mujer en la Consulta Médica.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/20966.pdf"
+        },
+        {
+          "titulo": "Ley 6770. Programa de atención, asesoramiento, contención y acompañamiento contra las violencias de género.",
+          "tipo_numero": "Ley 6770",
+          "descripcion": "Programa de atención, asesoramiento, contención y acompañamiento contra las violencias de género.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/26768.pdf"
+        },
+        {
+          "titulo": "Ley 7139. Atención a las víctimas de violencia de género.",
+          "tipo_numero": "Ley 7139",
+          "descripcion": "Atención a las víctimas de violencia de género.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/20421.pdf"
+        },
+        {
+          "titulo": "Ley 7258. Víctimas de violencia familiar y de género.",
+          "tipo_numero": "Ley 7258",
+          "descripcion": "Víctimas de violencia familiar y de género.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/21991.pdf"
+        },
+        {
+          "titulo": "Ley 7717. Modificación de la ley 6689. Adhiere a la ley 26485.",
+          "tipo_numero": "Ley 7717",
+          "descripcion": "Modificación de la ley 6689. Adhiere a la ley 26485.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/26680.pdf"
+        },
+        {
+          "titulo": "Ley 7754. Día Nacional de la Lucha contra la Violencia de Género en los Medios de Comunicación. Adhiere a la ley 27176.",
+          "tipo_numero": "Ley 7754",
+          "descripcion": "Día Nacional de la Lucha contra la Violencia de Género en los Medios de Comunicación. Adhiere a la ley 27176.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/26725.pdf"
+        },
+        {
+          "titulo": "Ley 7788. Obligatoriedad de realizar avisos publicitarios destinados a brindar información sobre la prevención de la violencia de género.",
+          "tipo_numero": "Ley 7788",
+          "descripcion": "Obligatoriedad de realizar avisos publicitarios destinados a brindar información sobre la prevención de la violencia de género.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/27001.pdf"
+        },
+        {
+          "titulo": "Ley 7830. Centro de Atención y Asesoramiento a Mujeres Víctimas de Violencia.",
+          "tipo_numero": "Ley 7830",
+          "descripcion": "Centro de Atención y Asesoramiento a Mujeres Víctimas de Violencia.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/27212.pdf"
+        },
+        {
+          "titulo": "Ley 2833-J. Registro Unico de Casos de Violencia de Género de la Provincia.",
+          "tipo_numero": "Ley 2833",
+          "descripcion": "J. Registro Unico de Casos de Violencia de Género de la Provincia.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/legisalud/migration/pdf/choley2833-J.pdf"
+        },
+        {
+          "titulo": "Ley 2893-G. Programa de cirugía reconstructiva estética para personas víctimas de violencia de género.",
+          "tipo_numero": "Ley 2893",
+          "descripcion": "G. Programa de cirugía reconstructiva estética para personas víctimas de violencia de género.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/32218.pdf"
+        },
+        {
+          "titulo": "Ley 2997-G. Ley Provincial Natalia Samaniego. Adhiere a la ley 27499.",
+          "tipo_numero": "Ley 2997",
+          "descripcion": "G. Ley Provincial Natalia Samaniego. Adhiere a la ley 27499.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/33744.pdf"
+        },
+        {
+          "titulo": "Ley 3298-G. Semana de Concientización de la No Violencia Contra la Mujer.",
+          "tipo_numero": "Ley 3298",
+          "descripcion": "G. Semana de Concientización de la No Violencia Contra la Mujer.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/38129.pdf"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "slug": "chubut",
+      "jurisdiccion": "Chubut",
+      "total_normas": 7,
+      "normas": [
+        {
+          "titulo": "Ley III-36. Ley de protección integral para prevenir, sancionar y erradicar la violencia contra las mujeres. Adhiere a la ley 26485.",
+          "tipo_numero": "Ley III-36",
+          "descripcion": "Ley de protección integral para prevenir, sancionar y erradicar la violencia contra las mujeres. Adhiere a la ley 26485.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/19224.pdf"
+        },
+        {
+          "titulo": "Ley XV-23. Emergencia Pública en materia de violencia de género.",
+          "tipo_numero": "Ley XV-23",
+          "descripcion": "Emergencia Pública en materia de violencia de género.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/29131.pdf"
+        },
+        {
+          "titulo": "Ley I-611. Día Nacional de la Lucha contra la Violencia de Género en los Medios de Comunicación. Adhiere a la ley 27176.",
+          "tipo_numero": "Ley I-611",
+          "descripcion": "Día Nacional de la Lucha contra la Violencia de Género en los Medios de Comunicación. Adhiere a la ley 27176.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/29505.pdf"
+        },
+        {
+          "titulo": "Ley VIII-129. Ley Micaela. Adhiere a la ley 27499.",
+          "tipo_numero": "Ley VIII-129",
+          "descripcion": "Ley Micaela. Adhiere a la ley 27499.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/33296.pdf"
+        },
+        {
+          "titulo": "Ley VI-23. Capacitación obligatoria en la temática de género y violencia contra las mujeres.",
+          "tipo_numero": "Ley VI-23",
+          "descripcion": "Capacitación obligatoria en la temática de género y violencia contra las mujeres.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/38116.pdf"
+        },
+        {
+          "titulo": "Decreto 932/2019. Programa Fortalecimiento Integral a las Víctimas de Violencia de Género.",
+          "tipo_numero": "Decreto 932/2019",
+          "descripcion": "Programa Fortalecimiento Integral a las Víctimas de Violencia de Género.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/34364.pdf"
+        },
+        {
+          "titulo": "Resolución 15/2017. Informes e investigación sobre la prevención de la violencia de género.",
+          "tipo_numero": "Resolución 15/2017",
+          "descripcion": "Informes e investigación sobre la prevención de la violencia de género.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/28687.pdf"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "slug": "cordoba",
+      "jurisdiccion": "Córdoba",
+      "total_normas": 10,
+      "normas": [
+        {
+          "titulo": "Ley 9283. Prevención, detección temprana, atención y erradicación de la violencia familiar.",
+          "tipo_numero": "Ley 9283",
+          "descripcion": "Prevención, detección temprana, atención y erradicación de la violencia familiar.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/23219.pdf"
+        },
+        {
+          "titulo": "Ley 10321. Consejo Provincial de las Mujeres.",
+          "tipo_numero": "Ley 10321",
+          "descripcion": "Consejo Provincial de las Mujeres.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/26330.pdf"
+        },
+        {
+          "titulo": "Ley 10352. Protección integral para prevenir, sancionar y erradicar la violencia contra las mujeres. Adhiere a la ley 26485.",
+          "tipo_numero": "Ley 10352",
+          "descripcion": "Protección integral para prevenir, sancionar y erradicar la violencia contra las mujeres. Adhiere a la ley 26485.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/26960.pdf"
+        },
+        {
+          "titulo": "Ley 10400. Modificación de la ley 9283.",
+          "tipo_numero": "Ley 10400",
+          "descripcion": "Modificación de la ley 9283.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/28021.pdf"
+        },
+        {
+          "titulo": "Ley 10401. Establece aspectos jurisdiccionales y procesales vinculados a la aplicación de las disposiciones pertinentes de la ley nacional 26485.",
+          "tipo_numero": "Ley 10401",
+          "descripcion": "Establece aspectos jurisdiccionales y procesales vinculados a la aplicación de las disposiciones pertinentes de la ley nacional 26485.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/28022.pdf"
+        },
+        {
+          "titulo": "Ley 10628. Ley Micaela. Adhiere a la ley 27499.",
+          "tipo_numero": "Ley 10628",
+          "descripcion": "Ley Micaela. Adhiere a la ley 27499.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/33750.pdf"
+        },
+        {
+          "titulo": "Decreto 952/2019. Reglamentación de la ley 10628.",
+          "tipo_numero": "Decreto 952/2019",
+          "descripcion": "Reglamentación de la ley 10628.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/33961.pdf"
+        },
+        {
+          "titulo": "Decreto 1329/2019. Campaña mundial de ONU Mujeres 16 Días de Activismo contra la Violencia de Género.",
+          "tipo_numero": "Decreto 1329/2019",
+          "descripcion": "Campaña mundial de ONU Mujeres 16 Días de Activismo contra la Violencia de Género.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/34214.pdf"
+        },
+        {
+          "titulo": "Resolución 182/2017. Unidad de Gestión de Políticas Preventivas de Violencia Familiar y de Género.",
+          "tipo_numero": "Resolución 182/2017",
+          "descripcion": "Unidad de Gestión de Políticas Preventivas de Violencia Familiar y de Género.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/28534.pdf"
+        },
+        {
+          "titulo": "Resolución 155/2020. Programa Punto Mujer Córdoba.",
+          "tipo_numero": "Resolución 155/2020",
+          "descripcion": "Programa Punto Mujer Córdoba.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/36292.pdf"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "slug": "corrientes",
+      "jurisdiccion": "Corrientes",
+      "total_normas": 8,
+      "normas": [
+        {
+          "titulo": "Ley 5464. Convención Interamericana para prevenir, sancionar y erradicar la violencia contra la mujer. Adhiere a la ley 24632.",
+          "tipo_numero": "Ley 5464",
+          "descripcion": "Convención Interamericana para prevenir, sancionar y erradicar la violencia contra la mujer. Adhiere a la ley 24632.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/16353.pdf"
+        },
+        {
+          "titulo": "Ley 5563. Programa de Prevención y Asistencia Integral de las Personas Víctimas de Violencia Familiar.",
+          "tipo_numero": "Ley 5563",
+          "descripcion": "Programa de Prevención y Asistencia Integral de las Personas Víctimas de Violencia Familiar.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/8223.pdf"
+        },
+        {
+          "titulo": "Ley 5903. Protección integral para prevenir, sancionar y erradicar la violencia contra las mujeres. Adhiere a ley 26485.",
+          "tipo_numero": "Ley 5903",
+          "descripcion": "Protección integral para prevenir, sancionar y erradicar la violencia contra las mujeres. Adhiere a ley 26485.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/24813.pdf"
+        },
+        {
+          "titulo": "Ley 6021. Protocolo de Detección Sistemática de Situaciones de Violencia contra la Mujer en la Consulta Médica.",
+          "tipo_numero": "Ley 6021",
+          "descripcion": "Protocolo de Detección Sistemática de Situaciones de Violencia contra la Mujer en la Consulta Médica.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/17786.pdf"
+        },
+        {
+          "titulo": "Ley 6268. Protocolo de Actuación Policial en materia de Violencia de Género.",
+          "tipo_numero": "Ley 6268",
+          "descripcion": "Protocolo de Actuación Policial en materia de Violencia de Género.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/23434.pdf"
+        },
+        {
+          "titulo": "Ley 6527. Ley Micaela. Adhiere a la ley 27499.",
+          "tipo_numero": "Ley 6527",
+          "descripcion": "Ley Micaela. Adhiere a la ley 27499.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/35592.pdf"
+        },
+        {
+          "titulo": "Ley 6531. Día de la Lucha contra la Violencia de Género en los Medios de Comunicación.",
+          "tipo_numero": "Ley 6531",
+          "descripcion": "Día de la Lucha contra la Violencia de Género en los Medios de Comunicación.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/35596.pdf"
+        },
+        {
+          "titulo": "Ley 6558. Registro Unico de Casos de Violencia de Género de la Provincia.",
+          "tipo_numero": "Ley 6558",
+          "descripcion": "Registro Unico de Casos de Violencia de Género de la Provincia.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/legisalud/migration/pdf/corley6558.pdf"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "slug": "entre-rios",
+      "jurisdiccion": "Entre Ríos",
+      "total_normas": 7,
+      "normas": [
+        {
+          "titulo": "Ley 10509. Políticas de Identidad de Género y Diversidad Sexual.",
+          "tipo_numero": "Ley 10509",
+          "descripcion": "Políticas de Identidad de Género y Diversidad Sexual.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/legisalud/migration/pdf/erley10509.pdf"
+        },
+        {
+          "titulo": "Ley 10571. Violencia de género en el sector público.",
+          "tipo_numero": "Ley 10571",
+          "descripcion": "Violencia de género en el sector público.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/31720.pdf"
+        },
+        {
+          "titulo": "Ley 10768. Ley Micaela. Adhiere a la ley 27499.",
+          "tipo_numero": "Ley 10768",
+          "descripcion": "Ley Micaela. Adhiere a la ley 27499.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/34813.pdf"
+        },
+        {
+          "titulo": "Ley 10905. Capacitación obligatoria en la temática de género de violencia contra las mujeres.",
+          "tipo_numero": "Ley 10905",
+          "descripcion": "Capacitación obligatoria en la temática de género de violencia contra las mujeres.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/legisalud/migration/pdf/erley10905.pdf"
+        },
+        {
+          "titulo": "Ley 10956. Protección integral de las mujeres y abordaje integral para prevenir y erradicar la violencia por razones de género. Modificación de la ley 10496.",
+          "tipo_numero": "Ley 10956",
+          "descripcion": "Protección integral de las mujeres y abordaje integral para prevenir y erradicar la violencia por razones de género. Modificación de la ley 10496.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/legisalud/migration/pdf/erley10956.pdf"
+        },
+        {
+          "titulo": "Decreto 3667/2014. Programa de Prevención y Abordaje de la temática Violencia.",
+          "tipo_numero": "Decreto 3667/2014",
+          "descripcion": "Programa de Prevención y Abordaje de la temática Violencia.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/24826.pdf"
+        },
+        {
+          "titulo": "Decreto 2398/2014. Programa para la Prevención y Asistencia de las Violencias y Coordinación de Políticas de Género.",
+          "tipo_numero": "Decreto 2398/2014",
+          "descripcion": "Programa para la Prevención y Asistencia de las Violencias y Coordinación de Políticas de Género.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/23925.pdf"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "slug": "formosa",
+      "jurisdiccion": "Formosa",
+      "total_normas": 1,
+      "normas": [
+        {
+          "titulo": "Ley 1569. Protección integral para prevenir, sancionar y erradicar la violencia contra las mujeres. Adhiere a la ley 26485.",
+          "tipo_numero": "Ley 1569",
+          "descripcion": "Protección integral para prevenir, sancionar y erradicar la violencia contra las mujeres. Adhiere a la ley 26485.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/19996.pdf"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "slug": "jujuy",
+      "jurisdiccion": "Jujuy",
+      "total_normas": 4,
+      "normas": [
+        {
+          "titulo": "Ley 5107. Protección contra la violencia familiar.",
+          "tipo_numero": "Ley 5107",
+          "descripcion": "Protección contra la violencia familiar.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/13240.pdf"
+        },
+        {
+          "titulo": "Ley 5738. Ley de protección integral para prevenir, sancionar y erradicar la violencia contra las mujeres. Adhiere a la ley 26485.",
+          "tipo_numero": "Ley 5738",
+          "descripcion": "Ley de protección integral para prevenir, sancionar y erradicar la violencia contra las mujeres. Adhiere a la ley 26485.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/20548.pdf"
+        },
+        {
+          "titulo": "Ley 5939. Día Provincial de la Lucha contra la violencia de género en los medios de comunicación.",
+          "tipo_numero": "Ley 5939",
+          "descripcion": "Día Provincial de la Lucha contra la violencia de género en los medios de comunicación.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/27213.pdf"
+        },
+        {
+          "titulo": "Ley 6140. Ley Micaela. Adhiere a la ley 27499.",
+          "tipo_numero": "Ley 6140",
+          "descripcion": "Ley Micaela. Adhiere a la ley 27499.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/34048.pdf"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "slug": "la-pampa",
+      "jurisdiccion": "La Pampa",
+      "total_normas": 4,
+      "normas": [
+        {
+          "titulo": "Ley 1081. Servicvio especial para la erradicación de la violencia familiar.",
+          "tipo_numero": "Ley 1081",
+          "descripcion": "Servicvio especial para la erradicación de la violencia familiar.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/26769.pdf"
+        },
+        {
+          "titulo": "Ley 2550. Protección integral para prevenir, sancionar y erradicar la violencia contra las mujeres. Adhiere a la ley 26485.",
+          "tipo_numero": "Ley 2550",
+          "descripcion": "Protección integral para prevenir, sancionar y erradicar la violencia contra las mujeres. Adhiere a la ley 26485.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/25977.pdf"
+        },
+        {
+          "titulo": "Ley 3042. Licencia para víctimas de violencia de género.",
+          "tipo_numero": "Ley 3042",
+          "descripcion": "Licencia para víctimas de violencia de género.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/31728.pdf"
+        },
+        {
+          "titulo": "Ley 3175. Ley Micaela. Adhiere a la ley 27499.",
+          "tipo_numero": "Ley 3175",
+          "descripcion": "Ley Micaela. Adhiere a la ley 27499.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/34207.pdf"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "slug": "la-rioja",
+      "jurisdiccion": "La Rioja",
+      "total_normas": 7,
+      "normas": [
+        {
+          "titulo": "Ley 8561. Protección integral para prevenir, sancionar y erradicar la violencia contra las mujeres. Adhiere a la ley 26485.",
+          "tipo_numero": "Ley 8561",
+          "descripcion": "Protección integral para prevenir, sancionar y erradicar la violencia contra las mujeres. Adhiere a la ley 26485.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/23562.pdf"
+        },
+        {
+          "titulo": "Ley 9563. Adhiere al Plan Integral Mujeres BA por la Paz - Maltrato Cero.",
+          "tipo_numero": "Ley 9563",
+          "descripcion": "Adhiere al Plan Integral Mujeres BA por la Paz - Maltrato Cero.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/23935.pdf"
+        },
+        {
+          "titulo": "Ley 9828. Educar en Igualdad: Prevención y Erradicación de la Violencia de Género. Adhiere a la ley 27234.",
+          "tipo_numero": "Ley 9828",
+          "descripcion": "Educar en Igualdad: Prevención y Erradicación de la Violencia de Género. Adhiere a la ley 27234.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/27157.pdf"
+        },
+        {
+          "titulo": "Ley 9834. Programa Provincial de Lucha Contra la Violencia de Género.",
+          "tipo_numero": "Ley 9834",
+          "descripcion": "Programa Provincial de Lucha Contra la Violencia de Género.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/legisalud/migration/pdf/lrley9834.pdf"
+        },
+        {
+          "titulo": "Ley 9921. Protocolo de Intervención en Situaciones de Violencia de Género.",
+          "tipo_numero": "Ley 9921",
+          "descripcion": "Protocolo de Intervención en Situaciones de Violencia de Género.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/28535.pdf"
+        },
+        {
+          "titulo": "Ley 10159. Modificación de la ley 9921.",
+          "tipo_numero": "Ley 10159",
+          "descripcion": "Modificación de la ley 9921.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/legisalud/migration/pdf/lrley10159.pdf"
+        },
+        {
+          "titulo": "Ley 10174. Ley Micaela. Adhiere a la ley 27499.",
+          "tipo_numero": "Ley 10174",
+          "descripcion": "Ley Micaela. Adhiere a la ley 27499.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/33620.pdf"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "slug": "mendoza",
+      "jurisdiccion": "Mendoza",
+      "total_normas": 10,
+      "normas": [
+        {
+          "titulo": "Ley 8226. Protección Integral para prevenir, sancionar y erradicar la violencia contra las mujeres. Adhiere a la ley 26485.",
+          "tipo_numero": "Ley 8226",
+          "descripcion": "Protección Integral para prevenir, sancionar y erradicar la violencia contra las mujeres. Adhiere a la ley 26485.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/24259.pdf"
+        },
+        {
+          "titulo": "Ley 8544. Día Provincial del respeto a la Diversidad Sexual e Identidad de Género.",
+          "tipo_numero": "Ley 8544",
+          "descripcion": "Día Provincial del respeto a la Diversidad Sexual e Identidad de Género.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/legisalud/migration/pdf/menley8544.pdf"
+        },
+        {
+          "titulo": "Ley 8714. Identidad de Género. Adhiere a la ley 26743.",
+          "tipo_numero": "Ley 8714",
+          "descripcion": "Identidad de Género. Adhiere a la ley 26743.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/legisalud/migration/pdf/menley8714.pdf"
+        },
+        {
+          "titulo": "Ley 8933. Educar en Igualdad: Prevención y Erradicación de la Violencia de Género. Adhiere a la ley 27234.",
+          "tipo_numero": "Ley 8933",
+          "descripcion": "Educar en Igualdad: Prevención y Erradicación de la Violencia de Género. Adhiere a la ley 27234.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/28087.pdf"
+        },
+        {
+          "titulo": "Ley 8932. Programa de Centros de Abordaje del Agresor en el marco de la lucha contra la Violencia de Género.",
+          "tipo_numero": "Ley 8932",
+          "descripcion": "Programa de Centros de Abordaje del Agresor en el marco de la lucha contra la Violencia de Género.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/28086.pdf"
+        },
+        {
+          "titulo": "Ley 9196. Ley Micaela. Adhiere a la ley 27499.",
+          "tipo_numero": "Ley 9196",
+          "descripcion": "Ley Micaela. Adhiere a la ley 27499.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/34323.pdf"
+        },
+        {
+          "titulo": "Ley 9262. Modificación de la ley 8226.",
+          "tipo_numero": "Ley 9262",
+          "descripcion": "Modificación de la ley 8226.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/legisalud/migration/pdf/menley9262.pdf"
+        },
+        {
+          "titulo": "Decreto 118/2020. Reglamentación de la ley 9196.",
+          "tipo_numero": "Decreto 118/2020",
+          "descripcion": "Reglamentación de la ley 9196.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/34927.pdf"
+        },
+        {
+          "titulo": "Resolución 623/2016. Programa Nuevas Redes para Mujeres en Situación de Violencia de Género y Personas del Colectivo LGBT.",
+          "tipo_numero": "Resolución 623/2016",
+          "descripcion": "Programa Nuevas Redes para Mujeres en Situación de Violencia de Género y Personas del Colectivo LGBT.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/27092.pdf"
+        },
+        {
+          "titulo": "Resolución 1004/2016. Modificación de la resolución 623/2016.",
+          "tipo_numero": "Resolución 1004/2016",
+          "descripcion": "Modificación de la resolución 623/2016.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/27091.pdf"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "slug": "misiones",
+      "jurisdiccion": "Misiones",
+      "total_normas": 6,
+      "normas": [
+        {
+          "titulo": "Ley XVII-37. Protección y asistencia a las víctimas de delitos contra la integridad sexual.",
+          "tipo_numero": "Ley XVII-37",
+          "descripcion": "Protección y asistencia a las víctimas de delitos contra la integridad sexual.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/12490.pdf"
+        },
+        {
+          "titulo": "Ley IV-68. Protección Integral para prevenir, sancionar y erradicar la violencia contra las mujeres. Adhiere a la ley 26485.",
+          "tipo_numero": "Ley IV-68",
+          "descripcion": "Protección Integral para prevenir, sancionar y erradicar la violencia contra las mujeres. Adhiere a la ley 26485.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/26128.pdf"
+        },
+        {
+          "titulo": "Ley IV-75. Día Nacional de la Lucha contra la Violencia de Género en los Medios de Comunicación. Adhiere a la ley 27176.",
+          "tipo_numero": "Ley IV-75",
+          "descripcion": "Día Nacional de la Lucha contra la Violencia de Género en los Medios de Comunicación. Adhiere a la ley 27176.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/legisalud/migration/pdf/misleyIV-75.pdf"
+        },
+        {
+          "titulo": "Ley IV-81. Promotoras de Género.",
+          "tipo_numero": "Ley IV-81",
+          "descripcion": "Promotoras de Género.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/31745.pdf"
+        },
+        {
+          "titulo": "Ley IV-85. Ley Micaela. Adhiere a la ley 27499.",
+          "tipo_numero": "Ley IV-85",
+          "descripcion": "Ley Micaela. Adhiere a la ley 27499.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/34324.pdf"
+        },
+        {
+          "titulo": "Resolución 1355/2012. Protocolo de Asistencia ante Víctimas de Delitos contra la Integridad Sexual.",
+          "tipo_numero": "Resolución 1355/2012",
+          "descripcion": "Protocolo de Asistencia ante Víctimas de Delitos contra la Integridad Sexual.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/19829.pdf"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "slug": "neuquen",
+      "jurisdiccion": "Neuquén",
+      "total_normas": 9,
+      "normas": [
+        {
+          "titulo": "Ley 2785. Régimen de Protección Integral para prevenir, sancionar y erradicar la violencia familiar.",
+          "tipo_numero": "Ley 2785",
+          "descripcion": "Régimen de Protección Integral para prevenir, sancionar y erradicar la violencia familiar.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/19239.pdf"
+        },
+        {
+          "titulo": "Ley 2786. Protección Integral para prevenir, sancionar y erradicar la violencia contra las mujeres.",
+          "tipo_numero": "Ley 2786",
+          "descripcion": "Protección Integral para prevenir, sancionar y erradicar la violencia contra las mujeres.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/26782.pdf"
+        },
+        {
+          "titulo": "Ley 2887. Observatorio de la Violencia contra las Mujeres.",
+          "tipo_numero": "Ley 2887",
+          "descripcion": "Observatorio de la Violencia contra las Mujeres.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/22780.pdf"
+        },
+        {
+          "titulo": "Ley 3033. Campaña de activismo mundial de las Naciones Unidas para poner fin a la violencia contra las mujeres y las niñas.",
+          "tipo_numero": "Ley 3033",
+          "descripcion": "Campaña de activismo mundial de las Naciones Unidas para poner fin a la violencia contra las mujeres y las niñas.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/28245.pdf"
+        },
+        {
+          "titulo": "Ley 3201. Ley Micaela. Adhiere a la ley 27499.",
+          "tipo_numero": "Ley 3201",
+          "descripcion": "Ley Micaela. Adhiere a la ley 27499.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/33766.pdf"
+        },
+        {
+          "titulo": "Decreto 2291/2012. Reglamentación de la ley 2785.",
+          "tipo_numero": "Decreto 2291/2012",
+          "descripcion": "Reglamentación de la ley 2785.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/26781.pdf"
+        },
+        {
+          "titulo": "Decreto 2305/2015. Reglamentación de la ley 2786.",
+          "tipo_numero": "Decreto 2305/2015",
+          "descripcion": "Reglamentación de la ley 2786.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/26354.pdf"
+        },
+        {
+          "titulo": "Decreto 1324/2017. Licencia por violencia contra las mujeres.",
+          "tipo_numero": "Decreto 1324/2017",
+          "descripcion": "Licencia por violencia contra las mujeres.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/29255.pdf"
+        },
+        {
+          "titulo": "Decreto 2225/2019. Reglamentación de la ley 3201.",
+          "tipo_numero": "Decreto 2225/2019",
+          "descripcion": "Reglamentación de la ley 3201.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/34370.pdf"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "slug": "rio-negro",
+      "jurisdiccion": "Río Negro",
+      "total_normas": 7,
+      "normas": [
+        {
+          "titulo": "Ley 4650. Protección Integral para prevenir, sancionar y erradicar la violencia contra las mujeres. Adhiere a ley 26485.",
+          "tipo_numero": "Ley 4650",
+          "descripcion": "Protección Integral para prevenir, sancionar y erradicar la violencia contra las mujeres. Adhiere a ley 26485.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/24264.pdf"
+        },
+        {
+          "titulo": "Ley 4799. Identidad de Género.",
+          "tipo_numero": "Ley 4799",
+          "descripcion": "Identidad de Género.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/legisalud/migration/pdf/rnley4799.pdf"
+        },
+        {
+          "titulo": "Ley 4897. Semana de Acciones por la No Violencia contra las Mujeres.",
+          "tipo_numero": "Ley 4897",
+          "descripcion": "Semana de Acciones por la No Violencia contra las Mujeres.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/legisalud/migration/pdf/rnley4897.pdf"
+        },
+        {
+          "titulo": "Ley 4948. Sistema de Alerta y Monitoreo Antipánico Rionegrino de asistencia a las víctimas de violencia.",
+          "tipo_numero": "Ley 4948",
+          "descripcion": "Sistema de Alerta y Monitoreo Antipánico Rionegrino de asistencia a las víctimas de violencia.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/23349.pdf"
+        },
+        {
+          "titulo": "Ley 5258. Cartelería sobre prevención y asistencia a víctimas de violencia de género.",
+          "tipo_numero": "Ley 5258",
+          "descripcion": "Cartelería sobre prevención y asistencia a víctimas de violencia de género.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/29782.pdf"
+        },
+        {
+          "titulo": "Ley 5410. Ley Micaela. Adhiere a la ley 27499.",
+          "tipo_numero": "Ley 5410",
+          "descripcion": "Ley Micaela. Adhiere a la ley 27499.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/36302.pdf"
+        },
+        {
+          "titulo": "Decreto 909/2003. Atención integral de la violencia familiar. Reglamentación de la ley 3040.",
+          "tipo_numero": "Decreto 909/2003",
+          "descripcion": "Atención integral de la violencia familiar. Reglamentación de la ley 3040.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/9340.pdf"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "slug": "salta",
+      "jurisdiccion": "Salta",
+      "total_normas": 5,
+      "normas": [
+        {
+          "titulo": "Ley 7863. Observatorio de violencia contra las mujeres. Modificación de la ley 7546.",
+          "tipo_numero": "Ley 7863",
+          "descripcion": "Observatorio de violencia contra las mujeres. Modificación de la ley 7546.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/24277.pdf"
+        },
+        {
+          "titulo": "Ley 7888. Protección contra la Violencia de Género.",
+          "tipo_numero": "Ley 7888",
+          "descripcion": "Protección contra la Violencia de Género.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/25817.pdf"
+        },
+        {
+          "titulo": "Ley 8180. Obligación de leyendas de carácter preventivo del maltrato y abuso sexual contra niños, niñas y adolescentes; y de violencia de género.",
+          "tipo_numero": "Ley 8180",
+          "descripcion": "Obligación de leyendas de carácter preventivo del maltrato y abuso sexual contra niños, niñas y adolescentes; y de violencia de género.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/34785.pdf"
+        },
+        {
+          "titulo": "Ley 8281. Modificación de la ley 7888.",
+          "tipo_numero": "Ley 8281",
+          "descripcion": "Modificación de la ley 7888.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/legisalud/migration/pdf/salley8281.pdf"
+        },
+        {
+          "titulo": "Decreto 2654/2014. Emergencia Pública en Materia Social por Violencia de Género.",
+          "tipo_numero": "Decreto 2654/2014",
+          "descripcion": "Emergencia Pública en Materia Social por Violencia de Género.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/24379.pdf"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "slug": "san-juan",
+      "jurisdiccion": "San Juan",
+      "total_normas": 4,
+      "normas": [
+        {
+          "titulo": "Ley 8319. Prevención y Actuación contra la Trata de Personas y Asistencia a sus Víctimas.",
+          "tipo_numero": "Ley 8319",
+          "descripcion": "Prevención y Actuación contra la Trata de Personas y Asistencia a sus Víctimas.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/22808.pdf"
+        },
+        {
+          "titulo": "Ley 8419. Modificación de la ley 8319.",
+          "tipo_numero": "Ley 8419",
+          "descripcion": "Modificación de la ley 8319.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/23456.pdf"
+        },
+        {
+          "titulo": "Ley 1317-S. Protección integral para prevenir, sancionar y erradicar la violencia contra las mujeres. Adhiere a la ley 26485.",
+          "tipo_numero": "Ley 1317",
+          "descripcion": "S. Protección integral para prevenir, sancionar y erradicar la violencia contra las mujeres. Adhiere a la ley 26485.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/25240.pdf"
+        },
+        {
+          "titulo": "Ley 2007-A. Ley Micaela. Adhiere a la ley 27499.",
+          "tipo_numero": "Ley 2007",
+          "descripcion": "A. Ley Micaela. Adhiere a la ley 27499.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/34731.pdf"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "slug": "san-luis",
+      "jurisdiccion": "San Luis",
+      "total_normas": 5,
+      "normas": [
+        {
+          "titulo": "Ley I-0925. Observatorio Provincial de la Violencia contra la Mujer.",
+          "tipo_numero": "Ley I-0925",
+          "descripcion": "Observatorio Provincial de la Violencia contra la Mujer.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/legisalud/migration/pdf/slleyI-925.pdf"
+        },
+        {
+          "titulo": "Ley I-1016. Ley Micaela. Adhiere a la ley 27499.",
+          "tipo_numero": "Ley I-1016",
+          "descripcion": "Ley Micaela. Adhiere a la ley 27499.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/34616.pdf"
+        },
+        {
+          "titulo": "Ley I-1034. Día Nacional de la Lucha contra la Violencia de Género en los Medios de Comunicación. Adhiere a la ley 27176.",
+          "tipo_numero": "Ley I-1034",
+          "descripcion": "Día Nacional de la Lucha contra la Violencia de Género en los Medios de Comunicación. Adhiere a la ley 27176.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/legisalud/migration/pdf/slleyI-1034.pdf"
+        },
+        {
+          "titulo": "Ley I-1097. Cartelería sobre prevención y asistencia a víctimas de violencia de género.",
+          "tipo_numero": "Ley I-1097",
+          "descripcion": "Cartelería sobre prevención y asistencia a víctimas de violencia de género.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/legisalud/migration/pdf/slleyI-1097.pdf"
+        },
+        {
+          "titulo": "Decreto 828/2014. Consejo Provincial de la Mujer.",
+          "tipo_numero": "Decreto 828/2014",
+          "descripcion": "Consejo Provincial de la Mujer.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/23965.pdf"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "slug": "santa-cruz",
+      "jurisdiccion": "Santa Cruz",
+      "total_normas": 4,
+      "normas": [
+        {
+          "titulo": "Ley 3201. Protección integral para prevenir, sancionar y erradicar la violencia contra las mujeres. Adhiere a la ley 26485.",
+          "tipo_numero": "Ley 3201",
+          "descripcion": "Protección integral para prevenir, sancionar y erradicar la violencia contra las mujeres. Adhiere a la ley 26485.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/24279.pdf"
+        },
+        {
+          "titulo": "Ley 3619. Prevención y erradicación de la violencia de género en medios de comunicación.",
+          "tipo_numero": "Ley 3619",
+          "descripcion": "Prevención y erradicación de la violencia de género en medios de comunicación.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/legisalud/migration/pdf/scley3619.pdf"
+        },
+        {
+          "titulo": "Ley 3642. Ley Micaela. Adhiere a la ley 27499.",
+          "tipo_numero": "Ley 3642",
+          "descripcion": "Ley Micaela. Adhiere a la ley 27499.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/33325.pdf"
+        },
+        {
+          "titulo": "Ley 3667. Protección Integral para prevenir, sancionar y erradicar la violencia contra las mujeres. Adhiere a la ley 27501.",
+          "tipo_numero": "Ley 3667",
+          "descripcion": "Protección Integral para prevenir, sancionar y erradicar la violencia contra las mujeres. Adhiere a la ley 27501.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/34337.pdf"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "slug": "santa-fe",
+      "jurisdiccion": "Santa Fe",
+      "total_normas": 5,
+      "normas": [
+        {
+          "titulo": "Ley 13348. Protección integral para prevenir, sancionar y erradicar la violencia contra las mujeres. Adhiere a ley 26485.",
+          "tipo_numero": "Ley 13348",
+          "descripcion": "Protección integral para prevenir, sancionar y erradicar la violencia contra las mujeres. Adhiere a ley 26485.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/24282.pdf"
+        },
+        {
+          "titulo": "Ley 13891. Ley Micaela. Adhiere a la ley 27499.",
+          "tipo_numero": "Ley 13891",
+          "descripcion": "Ley Micaela. Adhiere a la ley 27499.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/34338.pdf"
+        },
+        {
+          "titulo": "Decreto 4028/2013. Reglamentación de la ley 13348.",
+          "tipo_numero": "Decreto 4028/2013",
+          "descripcion": "Reglamentación de la ley 13348.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/23454.pdf"
+        },
+        {
+          "titulo": "Decreto 1785/2017. Programas para la Protección y Fortalecimiento de las Mujeres.",
+          "tipo_numero": "Decreto 1785/2017",
+          "descripcion": "Programas para la Protección y Fortalecimiento de las Mujeres.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/29046.pdf"
+        },
+        {
+          "titulo": "Decreto 192/2020. Reglamentación de la ley 13891.",
+          "tipo_numero": "Decreto 192/2020",
+          "descripcion": "Reglamentación de la ley 13891.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/35024.pdf"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "slug": "santiago-del-estero",
+      "jurisdiccion": "Santiago del Estero",
+      "total_normas": 2,
+      "normas": [
+        {
+          "titulo": "Ley 7032. Prevenir, sancionar y erradicar la violencia contra las mujeres. Adhiere a la ley 26485.",
+          "tipo_numero": "Ley 7032",
+          "descripcion": "Prevenir, sancionar y erradicar la violencia contra las mujeres. Adhiere a la ley 26485.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/24523.pdf"
+        },
+        {
+          "titulo": "Ley 7333. Capacitación Obligatoria en la temática de Género y Violencia contra las Mujeres y diversidades.",
+          "tipo_numero": "Ley 7333",
+          "descripcion": "Capacitación Obligatoria en la temática de Género y Violencia contra las Mujeres y diversidades.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/legisalud/migration/pdf/sdeley7333.pdf"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "slug": "tierra-del-fuego,-antartida-e-islas-del-atlantico-sur",
+      "jurisdiccion": "TIERRA DEL FUEGO, ANTARTIDA E ISLAS DEL ATLANTICO SUR",
+      "total_normas": 3,
+      "normas": [
+        {
+          "titulo": "Ley 1013. Protección Integral para Prevenir, Sancionar y Erradicar la Violencia Contra las Mujeres. Adhiere a la ley 26485.",
+          "tipo_numero": "Ley 1013",
+          "descripcion": "Protección Integral para Prevenir, Sancionar y Erradicar la Violencia Contra las Mujeres. Adhiere a la ley 26485.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/24290.pdf"
+        },
+        {
+          "titulo": "Ley 1293. Ley Micaela. Adhiere a la ley 27499.",
+          "tipo_numero": "Ley 1293",
+          "descripcion": "Ley Micaela. Adhiere a la ley 27499.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/34627.pdf"
+        },
+        {
+          "titulo": "Decreto 616/2017. Protocolo de atención integral a víctimas de violencia de género.",
+          "tipo_numero": "Decreto 616/2017",
+          "descripcion": "Protocolo de atención integral a víctimas de violencia de género.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/31915.pdf"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "slug": "tucuman",
+      "jurisdiccion": "Tucumán",
+      "total_normas": 8,
+      "normas": [
+        {
+          "titulo": "Ley 7029. Régimen de protección y asistencia a la víctima de violencia familiar.",
+          "tipo_numero": "Ley 7029",
+          "descripcion": "Régimen de protección y asistencia a la víctima de violencia familiar.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/10594.pdf"
+        },
+        {
+          "titulo": "Ley 8519. Comisión Provincial de Lucha contra la Trata de Personas y de Contención y Recuperación de Víctimas de la Explotación Sexual.",
+          "tipo_numero": "Ley 8519",
+          "descripcion": "Comisión Provincial de Lucha contra la Trata de Personas y de Contención y Recuperación de Víctimas de la Explotación Sexual.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/20021.pdf"
+        },
+        {
+          "titulo": "Ley 8854. Acceso a la información por parte de la ciudadanía, sensibilizar, prevenir y erradicar la violencia contra las mujeres, en todas sus formas.",
+          "tipo_numero": "Ley 8854",
+          "descripcion": "Acceso a la información por parte de la ciudadanía, sensibilizar, prevenir y erradicar la violencia contra las mujeres, en todas sus formas.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/26757.pdf"
+        },
+        {
+          "titulo": "Ley 9026. Distinción a Proyectos y Campañas que Promuevan la Erradicación de la Violencia contra Mujeres, Niñas, Niños y Adolescentes.",
+          "tipo_numero": "Ley 9026",
+          "descripcion": "Distinción a Proyectos y Campañas que Promuevan la Erradicación de la Violencia contra Mujeres, Niñas, Niños y Adolescentes.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/29053.pdf"
+        },
+        {
+          "titulo": "Ley 9247. Ley Micaela. Adhiere a la ley 27499.",
+          "tipo_numero": "Ley 9247",
+          "descripcion": "Ley Micaela. Adhiere a la ley 27499.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/35653.pdf"
+        },
+        {
+          "titulo": "Decreto 213/2012. Reglamentación de la ley 8519.",
+          "tipo_numero": "Decreto 213/2012",
+          "descripcion": "Reglamentación de la ley 8519.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/20429.pdf"
+        },
+        {
+          "titulo": "Decreto 884/2020. Reglamentación de la ley 9247.",
+          "tipo_numero": "Decreto 884/2020",
+          "descripcion": "Reglamentación de la ley 9247.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/36110.pdf"
+        },
+        {
+          "titulo": "Resolución 319/2010. Programa Provincial de Prevención y Asistencia de la Violencia.",
+          "tipo_numero": "Resolución 319/2010",
+          "descripcion": "Programa Provincial de Prevención y Asistencia de la Violencia.",
+          "pdf_url": "https://e-legis-ar.msal.gov.ar/htdocs/legisalud/migration/pdf/17151.pdf"
+        }
+      ]
+    }
+  ]
+}

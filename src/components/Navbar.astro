@@ -13,16 +13,8 @@ const mainLinks: NavLink[] = [
   { label: 'Contacto', href: '/contacto' },
 ];
 
-const secondaryLinks: NavLink[] = [
-  { label: 'Información útil y herramientas', href: '/informacion-util' },
-  { label: 'Legislación y jurisprudencia', href: '/legislacion' },
-  { label: 'Testimonios', href: '/testimonios' },
-  { label: 'Proyecto de Ley', href: '/proyecto-de-ley' },
-  { label: 'Blog', href: '/blog' },
-  { label: 'Preguntas Frecuentes', href: '/preguntas-frecuentes' },
-];
-
 const currentPath = Astro.url.pathname;
+const isLegisActive = currentPath === '/legislacion' || currentPath === '/jurisprudencia';
 ---
 
 <nav class="w-full sticky top-0 z-50" aria-label="Navegación principal">
@@ -113,20 +105,134 @@ const currentPath = Astro.url.pathname;
   <!-- ═══ Fila inferior: Bordó ═══ -->
   <div class="bg-bordo hidden lg:block">
     <div class="px-4 lg:px-8 xl:px-10">
-      <div class="flex items-center justify-center gap-1 lg:gap-2 xl:gap-4 h-11 overflow-x-auto">
-        {secondaryLinks.map((link) => (
-          <a
-            href={link.href}
+      <div class="flex items-center justify-center gap-1 lg:gap-2 xl:gap-4 h-11 overflow-visible">
+        <!-- 1. Información útil y herramientas -->
+        <a
+          href="/informacion-util"
+          class:list={[
+            'px-2.5 lg:px-3 py-1.5 text-xs lg:text-sm xl:text-base font-medium rounded transition-colors duration-200 whitespace-nowrap',
+            currentPath === '/informacion-util'
+              ? 'text-dorado bg-white/10'
+              : 'text-white/90 hover:text-white hover:bg-white/5',
+          ]}
+        >
+          Información útil y herramientas
+        </a>
+
+        <!-- 2. Menú desplegable: Legislación y jurisprudencia -->
+        <div class="relative group" id="legis-dropdown-container">
+          <button
+            type="button"
+            id="legis-dropdown-btn"
             class:list={[
-              'px-2.5 lg:px-3 py-1.5 text-xs lg:text-sm xl:text-base font-medium rounded transition-colors duration-200 whitespace-nowrap',
-              currentPath === link.href
+              'inline-flex items-center gap-1.5 px-2.5 lg:px-3 py-1.5 text-xs lg:text-sm xl:text-base font-medium rounded transition-colors duration-200 whitespace-nowrap cursor-pointer select-none',
+              isLegisActive
                 ? 'text-dorado bg-white/10'
                 : 'text-white/90 hover:text-white hover:bg-white/5',
             ]}
+            aria-expanded="false"
+            aria-haspopup="true"
           >
-            {link.label}
-          </a>
-        ))}
+            <span>Legislación y jurisprudencia</span>
+            <svg
+              class="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2.5"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+
+          <!-- Submenú flotante -->
+          <div
+            id="legis-dropdown-menu"
+            class="absolute left-0 top-full pt-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 min-w-[210px]"
+          >
+            <div class="bg-azul-marino-dark/95 backdrop-blur-md border border-dorado/30 rounded-xl shadow-2xl overflow-hidden py-1.5">
+              <a
+                href="/legislacion"
+                class:list={[
+                  'flex items-center justify-between px-4 py-2.5 text-xs lg:text-sm font-medium transition-colors duration-150',
+                  currentPath === '/legislacion'
+                    ? 'text-dorado bg-white/10 font-semibold'
+                    : 'text-white/90 hover:text-dorado hover:bg-white/5',
+                ]}
+              >
+                <span>Legislación</span>
+                <span class="text-dorado font-bold ml-2">›</span>
+              </a>
+
+              <div class="h-px bg-white/10 mx-3 my-1"></div>
+
+              <a
+                href="/jurisprudencia"
+                class:list={[
+                  'flex items-center justify-between px-4 py-2.5 text-xs lg:text-sm font-medium transition-colors duration-150',
+                  currentPath === '/jurisprudencia'
+                    ? 'text-dorado bg-white/10 font-semibold'
+                    : 'text-white/90 hover:text-dorado hover:bg-white/5',
+                ]}
+              >
+                <span>Jurisprudencia</span>
+                <span class="text-dorado font-bold ml-2">›</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Testimonios -->
+        <a
+          href="/testimonios"
+          class:list={[
+            'px-2.5 lg:px-3 py-1.5 text-xs lg:text-sm xl:text-base font-medium rounded transition-colors duration-200 whitespace-nowrap',
+            currentPath === '/testimonios'
+              ? 'text-dorado bg-white/10'
+              : 'text-white/90 hover:text-white hover:bg-white/5',
+          ]}
+        >
+          Testimonios
+        </a>
+
+        <!-- 4. Proyecto de Ley -->
+        <a
+          href="/proyecto-de-ley"
+          class:list={[
+            'px-2.5 lg:px-3 py-1.5 text-xs lg:text-sm xl:text-base font-medium rounded transition-colors duration-200 whitespace-nowrap',
+            currentPath === '/proyecto-de-ley'
+              ? 'text-dorado bg-white/10'
+              : 'text-white/90 hover:text-white hover:bg-white/5',
+          ]}
+        >
+          Proyecto de Ley
+        </a>
+
+        <!-- 5. Blog -->
+        <a
+          href="/blog"
+          class:list={[
+            'px-2.5 lg:px-3 py-1.5 text-xs lg:text-sm xl:text-base font-medium rounded transition-colors duration-200 whitespace-nowrap',
+            currentPath === '/blog'
+              ? 'text-dorado bg-white/10'
+              : 'text-white/90 hover:text-white hover:bg-white/5',
+          ]}
+        >
+          Blog
+        </a>
+
+        <!-- 6. Preguntas Frecuentes -->
+        <a
+          href="/preguntas-frecuentes"
+          class:list={[
+            'px-2.5 lg:px-3 py-1.5 text-xs lg:text-sm xl:text-base font-medium rounded transition-colors duration-200 whitespace-nowrap',
+            currentPath === '/preguntas-frecuentes'
+              ? 'text-dorado bg-white/10'
+              : 'text-white/90 hover:text-white hover:bg-white/5',
+          ]}
+        >
+          Preguntas Frecuentes
+        </a>
       </div>
     </div>
   </div>
@@ -154,26 +260,132 @@ const currentPath = Astro.url.pathname;
       <!-- Links secundarios en mobile -->
       <div class="border-t border-white/10 pt-3 mt-3">
         <p class="px-4 text-xs text-dorado/60 font-semibold uppercase tracking-wider mb-2">Recursos</p>
-        {secondaryLinks.map((link) => (
-          <a
-            href={link.href}
+
+        <!-- Información útil -->
+        <a
+          href="/informacion-util"
+          class:list={[
+            'block px-4 py-2.5 text-sm font-medium rounded-md transition-colors duration-200',
+            currentPath === '/informacion-util'
+              ? 'text-dorado bg-white/5'
+              : 'text-white/80 hover:text-white hover:bg-white/5',
+          ]}
+        >
+          Información útil y herramientas
+        </a>
+
+        <!-- Acordeón móvil: Legislación y jurisprudencia -->
+        <div class="rounded-md overflow-hidden">
+          <button
+            id="mobile-legis-toggle"
+            type="button"
             class:list={[
-              'block px-4 py-2.5 text-sm font-medium rounded-md transition-colors duration-200',
-              currentPath === link.href
+              'w-full flex items-center justify-between px-4 py-2.5 text-sm font-medium rounded-md transition-colors duration-200 cursor-pointer',
+              isLegisActive
                 ? 'text-dorado bg-white/5'
                 : 'text-white/80 hover:text-white hover:bg-white/5',
             ]}
+            aria-expanded="false"
           >
-            {link.label}
-          </a>
-        ))}
+            <span>Legislación y jurisprudencia</span>
+            <svg
+              id="mobile-legis-arrow"
+              class="w-4 h-4 transition-transform duration-200 text-dorado"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div id="mobile-legis-sub" class="hidden pl-4 pr-2 space-y-1 mt-1 border-l-2 border-dorado/40 ml-4">
+            <a
+              href="/legislacion"
+              class:list={[
+                'flex items-center justify-between px-3 py-2 text-sm rounded-md transition-colors',
+                currentPath === '/legislacion'
+                  ? 'text-dorado bg-white/10 font-semibold'
+                  : 'text-white/70 hover:text-dorado hover:bg-white/5',
+              ]}
+            >
+              <span>Legislación</span>
+              <span class="text-dorado font-bold">›</span>
+            </a>
+            <a
+              href="/jurisprudencia"
+              class:list={[
+                'flex items-center justify-between px-3 py-2 text-sm rounded-md transition-colors',
+                currentPath === '/jurisprudencia'
+                  ? 'text-dorado bg-white/10 font-semibold'
+                  : 'text-white/70 hover:text-dorado hover:bg-white/5',
+              ]}
+            >
+              <span>Jurisprudencia</span>
+              <span class="text-dorado font-bold">›</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Testimonios -->
+        <a
+          href="/testimonios"
+          class:list={[
+            'block px-4 py-2.5 text-sm font-medium rounded-md transition-colors duration-200',
+            currentPath === '/testimonios'
+              ? 'text-dorado bg-white/5'
+              : 'text-white/80 hover:text-white hover:bg-white/5',
+          ]}
+        >
+          Testimonios
+        </a>
+
+        <!-- Proyecto de Ley -->
+        <a
+          href="/proyecto-de-ley"
+          class:list={[
+            'block px-4 py-2.5 text-sm font-medium rounded-md transition-colors duration-200',
+            currentPath === '/proyecto-de-ley'
+              ? 'text-dorado bg-white/5'
+              : 'text-white/80 hover:text-white hover:bg-white/5',
+          ]}
+        >
+          Proyecto de Ley
+        </a>
+
+        <!-- Blog -->
+        <a
+          href="/blog"
+          class:list={[
+            'block px-4 py-2.5 text-sm font-medium rounded-md transition-colors duration-200',
+            currentPath === '/blog'
+              ? 'text-dorado bg-white/5'
+              : 'text-white/80 hover:text-white hover:bg-white/5',
+          ]}
+        >
+          Blog
+        </a>
+
+        <!-- Preguntas Frecuentes -->
+        <a
+          href="/preguntas-frecuentes"
+          class:list={[
+            'block px-4 py-2.5 text-sm font-medium rounded-md transition-colors duration-200',
+            currentPath === '/preguntas-frecuentes'
+              ? 'text-dorado bg-white/5'
+              : 'text-white/80 hover:text-white hover:bg-white/5',
+          ]}
+        >
+          Preguntas Frecuentes
+        </a>
       </div>
     </div>
   </div>
 </nav>
 
-<!-- Script para toggle del menú mobile -->
+<!-- Scripts para menú mobile y dropdowns -->
 <script>
+  // Mobile menu principal toggle
   const toggle = document.getElementById('mobile-menu-toggle');
   const menu = document.getElementById('mobile-menu');
   const iconOpen = document.getElementById('menu-icon-open');
@@ -188,5 +400,43 @@ const currentPath = Astro.url.pathname;
 
     toggle.setAttribute('aria-expanded', String(!isOpen));
     toggle.setAttribute('aria-label', isOpen ? 'Abrir menú' : 'Cerrar menú');
+  });
+
+  // Mobile submenú Legislación y jurisprudencia
+  const mobileLegisToggle = document.getElementById('mobile-legis-toggle');
+  const mobileLegisSub = document.getElementById('mobile-legis-sub');
+  const mobileLegisArrow = document.getElementById('mobile-legis-arrow');
+
+  mobileLegisToggle?.addEventListener('click', () => {
+    const isExpanded = !mobileLegisSub?.classList.contains('hidden');
+    mobileLegisSub?.classList.toggle('hidden');
+    mobileLegisArrow?.classList.toggle('rotate-180');
+    mobileLegisToggle.setAttribute('aria-expanded', String(!isExpanded));
+  });
+
+  // Desktop click toggle support (for touch screens / clicking)
+  const legisDropdownBtn = document.getElementById('legis-dropdown-btn');
+  const legisDropdownMenu = document.getElementById('legis-dropdown-menu');
+
+  legisDropdownBtn?.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const isVisible = legisDropdownMenu?.classList.contains('opacity-100');
+    if (isVisible) {
+      legisDropdownMenu?.classList.remove('opacity-100', 'visible');
+      legisDropdownMenu?.classList.add('opacity-0', 'invisible');
+      legisDropdownBtn.setAttribute('aria-expanded', 'false');
+    } else {
+      legisDropdownMenu?.classList.remove('opacity-0', 'invisible');
+      legisDropdownMenu?.classList.add('opacity-100', 'visible');
+      legisDropdownBtn.setAttribute('aria-expanded', 'true');
+    }
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!legisDropdownBtn?.contains(e.target as Node)) {
+      legisDropdownMenu?.classList.remove('opacity-100', 'visible');
+      legisDropdownMenu?.classList.add('opacity-0', 'invisible');
+      legisDropdownBtn?.setAttribute('aria-expanded', 'false');
+    }
   });
 </script>
